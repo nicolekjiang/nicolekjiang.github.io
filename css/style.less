@@ -263,10 +263,10 @@ body{
 			//width: 100%;
 			padding: 50px 10%;
 			margin: 0 auto;
-			.first_desc{
+		}
+		.first_desc{
 				padding-top: 0px;
 			}
-		}
 		.desc{
 			max-width: 900px;
 			margin: 0 auto;
@@ -293,16 +293,14 @@ body{
 			.cta_bullets{
 				//list-style-type: square;
 				margin-left: 20px;
-
 				li{
 					margin-top: 10px;
 				}
-
-			li:before {
-			    content: "•  ";
-			    color: @slate4; /* or whatever color you prefer */
-			    margin-left: -10px;
-			}
+				li:before {
+				    content: "•  ";
+				    color: @slate4; /* or whatever color you prefer */
+				    margin-left: -10px;
+				}
 			}//cta_bullets
 		}//desc_content
 		.cta{
@@ -349,10 +347,19 @@ body{
 	footer{
 		background: @slate5;
 		color: @slate1;
+		ul{
+			margin-bottom: 0px;
+		}
 		.copyright{
 			color: @slate1;
-			font-size: 12px;
+			font-size: 10px;
 			padding: 22px 10px;
+			text-align: center;
+			float: none;
+			text-align: center;
+			span{
+				color: @slate1;
+			}
 		}//copyright
 		.social_icon{
 			padding: 15px;
