@@ -1,197 +1,155 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
 	<head>  
-		<title>Hack Waterloo</title>
-		<meta name="author" content="Nicole Jiang & Mark Farrel">
-        <meta content="text/html; charset=utf-8" http-equiv="content-type">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=false">
-        <meta name="description" content="Hack Waterloo">
-		<link href='http://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800' rel='stylesheet' type='text/css'>
-		<link rel="stylesheet" href="css/bootstrap.css">
-		<link rel="stylesheet" href="css/style.css">
+		<title>NEX</title>
+		<meta name="author" content="Nicole Jiang">
+	    <meta content="text/html; charset=utf-8" http-equiv="content-type">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=false">
+	    
+		
 		<link rel="icon" type="image/x-icon" href="favicon.ico">
-		<script type="text/javascript" src="js/jquery-1.10.2.js"></script>
-		<script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-		<script type="text/javascript" src="js/jquery.stellar.js"></script>
-		<script type="text/javascript" src="js/underscore.js"></script>
-        <script type="text/javascript"> 
-            /** 
-              * Animates clicking of navbar items. 
-              * Credit: http://jsfiddle.net/lollero/ZVdRt/
-             **/
-            $(function() { 
-               $('.nav-item').on('click', function(ev) { 
-                   ev.preventDefault();
-                   $('body', 'html').animate({
-                       scrollTop : $( $(this).attr('href') ).offset().top
-                   }, 1200);
-               });
-            });
-            $(document).ready(function(){
-	            $('nav').hide();
-	            /* PINNING NAV*/
-				$(window).scroll(function(){
-					$window = $(window);
-					if($(window).scrollTop()>525)
-					{
-						$('.nav').fadeIn("fast");
-					}
-					else{
-						$('.nav').fadeOut("fast");
-					}
-				});
-	        });
-            
-        </script> 
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/styles.css">
+		
+		<script src="js/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+
 	</head>
 	<body>
-		<nav class="nav  navbar-right">
-			<ul class="nav nav-pills">
-				<li><a class="nav-item" href="#whyhack">Whyhack</a></li>
-                <li><a class="nav-item" href="#rules">Rules</a></li>
-				<li><a class="nav-item" href="#faq">FAQ</a></li>
-                <li><a class="nav-item" href="#sponsor">Sponsor</a></li>
-				<li><a class="nav-item" href="#contact">Contact</a></li>
+		<section id="landing_splash">
+			<nav class="navbar navbar-default">
+				<!-- Brand and toggle get grouped for better mobile display -->
+			    <div class="navbar-header">
+			      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+			        <span class="sr-only">Toggle navigation</span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			      </button>
+			      <img src="img/logo.svg" class="navbar-brand" id="landing_logo">
+			    </div>
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="landing_nav_right nav navbar-nav" >
+						<li class="tooltip_btn" data-toggle="tooltip" data-placement="bottom" title="Coming soon!">Login</li>
+
+						<li id="nav_join" class="tooltip_btn" data-toggle="tooltip" data-placement="bottom" title="Coming soon!">Join</li>
+
+						<li id="button_wrapper"><button type="button" class="cta btn btn-default tooltip_btn" data-toggle="tooltip" data-placement="bottom" title="Coming soon!">Post Your Needs</button></li>
+					</ul>
+					<div class="clearfix"></div>
+				</div>
+			</nav>
+
+			<div class="splash">
+				<h1>Find and hire your Wedding Vendors with ease</h1>
+				<h3>Make your wedding planning enjoyable by organizing you Vendors through Nathan’s Exchange</h3>
+				<button class="tooltip_btn" data-toggle="tooltip" data-placement="bottom" title="Coming soon!">How it works</button>
+			</div><!-- splash -->
+		</section>
+		<section id="explore_nex">
+			<h2>Explore NEX</h2>
+			<h4>Chocolate cake halvah cookie oat cake jelly beans. Cotton candy croissant sweet roll chocolate tootsie roll. Macaroon gingerbread candy cake.</h4>
+			<button class="cta tooltip_btn" data-toggle="tooltip" data-placement="bottom" title="Coming soon!">Post your needs</button>
+			<div class="divline"></div>
+			<ul class="value_prop">
+				<h2>Value Prop</h2>
+				<li></li>
+				<li></li>
+				<li></li>
 			</ul>
-		</nav>
-		<section class="header jumbotron">
-			<h1>hackWATERLOO</h1>
-			<div class="header_loc">
-				<h3><span>Location:</span> Multimedia Lab at CPH 1346 </h3>
-			</div>
-			<div class="header_time">
-				<h3><span>Date:</span> 7:00PM Friday March 28th - 7:00PM Saturday, March 29th, 2014</h3>
-			</div>
-            <a href="http://bit.ly/waterloohack" target="_blank">
-                <div class="cta  btn btn-primary btn-lg">Join the Hack now!</div>
-            </a>
 		</section>
-		<section id="whyhack" class="whyhack">
-			<div class="content left">
-				<h3>Why Hack?</h3>
-                <p>uWaterloo students hacking for the Waterloo community! Express your creativity and build off of concepts and ideas you have formed in your classes and personal interests. Join the hackathon to show your skills in programming, design, planning, art, mathematics, engineering, science, health, technology, environment and your passion for making a difference amongst your peers. </p></br>
-                <p>Hacking is an incredible learning experience and a great way to network in your community and build something from the ground up. Oh and we have some great sponsors providing food, prizes and swag to ensure you have an awesome time!</p>
-	            <a href="http://bit.ly/waterloohack" target="_blank">
-	                <div class="cta  btn btn-primary btn-lg">Join the Hack now!</div>
-	            </a>
-	        </div>
-	        <div class="visual right">
-	        	<img src="img/whyhack.png">
-	        </div>
-	        <div class="clearfix"></div>
-		</section>
-        <section id="rules" class="rules">
-        	<div class="content left">
-	            <h3>Rules</h3>
-	            <p>The base for this hackathon is promoting Waterloo pride, uWaterloo students working together, building projects to either help students or anyone in general. The idea is to come with an open mind and create something to show your peers how much you’ve learned from your work here.</p></br>
-	            <p>Participants must either begin working on a new project from scratch, or write an independent module for a larger piece of existing software. If the latter is chosen, only the module itself will be taken into consideration for judging. When making a submission, the participant must also chose ‘module’ as their project type. </p>
-	        </div>
-	        <div class="visual right">
-	        	<img src="img/rules.png">
-	        </div>
-        </section>
-        <section id="vm" class="vm">
-        	<div class="content left">
-        		<h3>Mentors and Volunteers</h3>
-        		<p>We are looking for volunteers who want to experience the hackathon but don’t necessarily want to compete for the prize. If you have never been to a hackathon and want the full experience of music, coding, designing, energy drinks and great people sign up to be a volunteer for hack uwaterloo. Be a part of something revolutionary!</p></br>
-
-        		<p>Mentors needed! Often times during hackathons, a group will hit a roadblock because they have an AMAZING idea and no way of implementing it. We would love to have students who have hackathon experience to come be student support for the teams in need. Lecturers and assistants are welcome to sign up as well! Watch your students apply concepts to the real world!</p>
-
-        	</div>
-        	<div class="visual right"><img style="margin-top: 30px" src="img/mentor_img.png"></div>
-        	<div class="clearfix"></div>
-        </section>
-
-		<section id="faq" class="faq">
-			<h3>FAQ</h3>
-            <h4>What prizes are available?</h4>
-            <p>Cool swags from our sponsors; Various raffle prizes to give out; Monetary prizes will be awarded to winners for various judging categories</p>
-            <h4>What program do I have to be in?</h4>
-            <p>Any student in any Waterloo program/faculty plan is welcome to participate in the hackathon!</p>
-            <h4>Do I have to have prior programming experience?</h4>
-            <p>Prior programming experience would be an asset. However, anyone who is motivated to learn, create and solve problems is encouraged to attend. If you're inexperienced in software development and think you might be overwhelmed by the competition - don't worry, a hackathon is an opportunity for person growth. You may benefit from collaboration with others. It's the experience that matters!</p>
-            <h4>What should I bring?</h4>
-            <p>You should bring your idea, enthusiasm, and your devices for work</p>
-            <h4>How big can my team be?</h4>
-            <p>You can have maximum 4 team members on your team.</p>
-            <h4>Must I have a team?</h4>
-            <p>You don't have to have a team, however collaboration is definitely encouraged. We should love to see cool developement and design work in your product and teamwork would often helps! If you would like to join a team, be sure to identify your role and what roles you're looking for in the sign up form.</p>
-            <h4>Will there be food provided at the event?</h4>
-            <p>We will be able to cover essential meals and caffeine during the event! Be sure to let us know your dietary restrictions so we can accommodate your conditions.</p>
-	    </section>
-		<section id="sponsor" class="sponsors">
-			<h3>Sponsors</h3>
-            <div class="row">
-                <div class="col-xs-6 col-md-3">
-                    <a href="http://www.enflick.com/" class="thumbnail">
-                        <img src="img/enflick.jpg" alt="..." />
-                    </a> 
-                </div> 
-               <div class="col-xs-6 col-md-3">
-                   <a href="https://developers.facebook.com/" class="thumbnail">
-                       <img src="img/facebook.jpg" alt="..." />
-                   </a>
-              </div>
-              <div class="col-xs-6 col-md-3">
-                  <a href="http://kik.com" class="thumbnail">
-                      <img src="img/kik.jpg" alt="..." /> 
-                  </a> 
-              </div>
-              <div class="col-xs-6 col-md-3">
-                  <a href="http://cisco.com" class="thumbnail">
-                      <img src="img/cisco.jpg" alt="..." /> 
-                  </a> 
-              </div>
-              <div class="col-xs-6 col-md-3">
-                  <a href="http://ece.uwaterloo.ca" class="thumbnail">
-                      <img src="img/ece.jpg" alt="..." /> 
-                  </a> 
-              </div> 
-			  <div class="col-xs-6 col-md-3">
-			    <a href="http://msdn.microsoft.com/en-US/" class="thumbnail">
-                  <img src="img/msft.jpg" alt="..." />
-			    </a>
-			  </div>
-			  <div class="col-xs-6 col-md-3">
-			    <a href="http://software.intel.com/" class="thumbnail">
-			      <img src="img/intel.jpg" alt="..." />
-			    </a>
-              </div>
-              <div class="col-xs-6 col-md-3">
-                <a href="http://velocity.uwaterloo.ca" class="thumbnail">
-                  <img src="img/velocity.jpg" alt="..." />
-                </a> 
-              </div>
-			  <div class="col-xs-6 col-md-3">
-			    <a href="https://developers.google.com/" class="thumbnail">
-                  <img src="img/google.jpg" alt="..." />
-			    </a>
-			  </div>
-			  <div class="col-xs-6 col-md-3">
-			    <a href="http://csclub.uwaterloo.ca" class="thumbnail">
-			      <img src="img/csclub.jpg" alt="..." />
-			    </a>
-			  </div>
-			  <div class="col-xs-6 col-md-3">
-			    <a href="http://engsoc.uwaterloo.ca" class="thumbnail">
-			      <img src="img/engsoc.jpg" alt="..." />
-			    </a>
-			  </div>
+		<div class="divline"></div>
+		<section id="popular_service">
+			<h2>Popular Services</h2>
+			<ul>
+				<li class="tooltip_btn" data-toggle="tooltip" data-placement="bottom" title="Coming soon!">
+					<h3>Wedding planners</h3>
+					<img src="img/1.png">
+				</li>
+				<li class="tooltip_btn" data-toggle="tooltip" data-placement="bottom" title="Coming soon!">
+					<h3>Wedding Photographers</h3>
+					<img src="img/2.png">
+				</li>
+				<li class="tooltip_btn" data-toggle="tooltip" data-placement="bottom" title="Coming soon!">
+					<h3>Bridal Shops</h3>
+					<img src="img/3.png">
+				</li>
+				<li class="tooltip_btn" data-toggle="tooltip" data-placement="bottom" title="Coming soon!">
+					<h3>Catering</h3>
+					<img src="img/4.png">
+				</li>
+				<li class="tooltip_btn" data-toggle="tooltip" data-placement="bottom" title="Coming soon!">
+					<h3>Wedding Registry</h3>
+					<img src="img/5.png">
+				</li>
+				<li class="tooltip_btn" data-toggle="tooltip" data-placement="bottom" title="Coming soon!">
+					<h3>Florist</h3>
+					<img src="img/6.png">
+				</li>
+			</ul>
+			<div class="cta_wrapper">
+				<button class="secondary cta tooltip_btn" data-toggle="tooltip" data-placement="bottom" title="Coming soon!">View More</button>
+				<button class="cta tooltip_btn" data-toggle="tooltip" data-placement="bottom" title="Coming soon!">Post your needs</button>
 			</div>
 		</section>
-        <section id="contact" class="contact">
-            <h3>CONTACT</h3>
-            <p>Contact <a href="mailto:nicole.jiang@uwaterloo.ca">nicole.jiang@uwaterloo.ca</a> for any questions you might have!</p>
-        </section> 
+		<section id="quotes">
+
+
+
+			<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+			  <!-- Indicators -->
+			  <ol class="carousel-indicators">
+			    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+			    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+			    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+			  </ol>
+
+			  <!-- Wrapper for slides -->
+			  <div class="carousel-inner" role="listbox">
+			    <div class="item active">
+			      <img src="..." alt="...">
+			      <div class="carousel-caption">
+			        ...
+			      </div>
+			    </div>
+			    <div class="item">
+			      <img src="..." alt="...">
+			      <div class="carousel-caption">
+			        ...
+			      </div>
+			    </div>
+			    ...
+			  </div>
+
+			  <!-- Controls -->
+			  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+			    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+			    <span class="sr-only">Previous</span>
+			  </a>
+			  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+			    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+			    <span class="sr-only">Next</span>
+			  </a>
+			</div>
+
+
+
+
+
+
+			
+			<div class="left quote_content">
+				<img src="">
+				<p>Sweet roll jujubes marshmallow bonbon powder jujubes cotton candy pastry. Dessert tart dessert donut. Icing lemon drops tiramisu.</p>
+				<img src=""> <!-- quotes -->
+			</div><!-- quote content -->
+			<div class="right quote_label"></div>
+		</section>
+		<footer></footer>
 	</body>
-	<footer>
-		<p>All rights reserved by Hack Waterloo 2014</p>
-	</footer>
 	<script type="text/javascript">
-
+	$(function () {
+	  $('[data-toggle="tooltip"]').tooltip()
+	})
 	</script>
-
-
 </html>
