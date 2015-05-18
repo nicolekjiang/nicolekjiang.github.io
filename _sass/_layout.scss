@@ -403,6 +403,8 @@ html, body,
     position: relative;
     transition: 1s ease-in-out;
     background-attachment: fixed;
+    max-width: 1400px;
+    margin: auto;
     .portfolio-caption{
       color: white; 
       position: absolute;
@@ -448,6 +450,7 @@ html, body,
       letter-spacing: 3px;
       padding: 12px 25px;
       margin: 20px auto;
+      font-size: 10px;
       border-radius: 1px;
       font-family: 'lato',sans-serif;
       -webkit-transition: all 0.25s ease 0s;
@@ -506,6 +509,7 @@ html, body,
         color: white;
         background: #2C2C2F;
         border: 1px solid #2C2C2F;     
+        font-size: 10px;
         &:hover{
             cursor: pointer;
             background-color: #2C2C2F+#111111;
