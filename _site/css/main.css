@@ -461,7 +461,7 @@ html, body,
   background-repeat: no-repeat;
   background-size: cover; }
 
-.no-touch .cbp-fbscroller section {
+.cbp-fbscroller section {
   height: 100vh;
   background-size: 65%;
   background-position: 10% 50%;
@@ -472,7 +472,7 @@ html, body,
   background-attachment: fixed;
   max-width: 1400px;
   margin: auto; }
-  .no-touch .cbp-fbscroller section .portfolio-caption {
+  .cbp-fbscroller section .portfolio-caption {
     color: white;
     position: absolute;
     display: block;
@@ -486,13 +486,15 @@ html, body,
   font-size: 16px;
   margin-bottom: 5px;
   line-height: 23px;
-  letter-spacing: 0.3px; }
+  letter-spacing: 0.3px;
+  color: white; }
 .portfolio-caption h2 {
   font-weight: 100;
   letter-spacing: 3px;
   font-size: 55px;
   font-family: 'Raleway Dots', cursive;
-  line-height: 50px; }
+  line-height: 50px;
+  color: white; }
 .portfolio-caption h3 {
   color: rgba(255, 255, 255, 0.54);
   font-size: 12px;
@@ -605,10 +607,7 @@ html, body,
 
 @media (max-width: 1200px) {
   .cbp-fbscroller section {
-    position: relative;
-    background-attachment: scroll !important;
-    background-size: 90% !important;
-    background-position: center 20% !important; }
+    background-image: none !important; }
     .cbp-fbscroller section .portfolio-caption {
       margin-top: 0px !important;
       right: 70px !important; }
