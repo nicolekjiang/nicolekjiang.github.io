@@ -1,74 +1,110 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+---
+layout: landing
+---
 
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
-	<head>  
-		<title>By Nicole Jiang</title>
-		<meta name="author" content="Nicole Jiang">
-	    <meta content="text/html; charset=utf-8" http-equiv="content-type">
-	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-	    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=false">
-	    <meta name="description" content="Nicole Jiang is a Product Designer & Software Developer between Toronto, Bay Area, and London.">
-	    <!-- Wooo are you checking out my code? 
-	    Well I hope you enjoy XKCD: http://xkcd.com/1396/ -->
-		<link rel="stylesheet" href="css/styles.css">
-		<link rel="icon" type="image/x-icon" href="favicon.ico">
-		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-	</head>
-	<body>
-		<div id="bg"></div>
-		<div class="snow-container">
-			<div class="snow foreground"></div>
-			<div class="snow foreground layered"></div>
-			<div class="snow middleground"></div>
-			<div class="snow middleground layered"></div>
-			<div class="snow background"></div>
-			<div class="snow background layered"></div>
-		</div>
-		<div class="content">
-			<h2 class="">HELLO STRANGER</h2>
-			<h1>I'm Nicole.</h1>
-			<p>A new (and fun) website is on its way.. but I hope you enjoy this one as well.. Or perhaps the <a class="underline" href="/v1">old one</a>.</p>
+<!-- <div class="home">
 
-			<p>Currently studying Computer Engineering at <a class="underline" href="http://www.ucl.ac.uk/" target="new">UCL</a> in London, United Kingdom; Previous designed at <a class="underline" href="http://palantir.com" target="new">Palantir</a> and <a class="underline" href="http://pixlee.com" target="new">Pixlee</a>.</br>
+  <h1 class="page-heading">Posts</h1>
 
-				<!-- Currently designing with <a class="underline" href="http://www.behance.net/qinzehao" target="new">DavidQin</a> and making <a class="underline" href="http://www.qinstudios.com/" target="new">Qinstudios</a> happen.</p> -->
+  <ul class="post-list">
+    {% for post in site.posts %}
+      <li>
+        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
 
-			<p>I've been traveling around - check out my <a class="underline" href="http://instagram.com/nicolekjiang" target="new">photos</a>.</p>
+        <h2>
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        </h2>
+      </li>
+    {% endfor %}
+  </ul>
 
-			
+  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
 
-			<div class="links">
-				<ul>
-					<a href="mailto:nicolekjiang@gmail.com" target="new"><li class="solid">Say Hello</li></a>
-					<a href="/work" target="new"><li>work</li></a>
-					<a href="/nicolejiang_resume.pdf" target="new"><li>Resume</li></a>
-					<a href="http://www.dribbble.com/nicolekjiang" target="new"><li>Dribbble</li></a>
-					<a href="http://github.com/nicolekjiang" target="new"><li>Github</li></a>
-					<a href="http://ca.linkedin.com/in/nicolekjiang/" target="new"><li>Linkedin</li></a>
-				</ul>
-			</div>
+</div> -->
 
-		</div>
+<!-- Splash page -->
+<section class="splash landing-bg">
+  <div class="splash-wrapper"  data-0="top: 100px;
+    opacity: 1;" data-300="top: 170px; opacity:0; ">
+    <h5 class="wow fadeInUp">Hello Stranger</h5>
+    <p class="wow fadeInUp" data-wow-delay="1s" data-wow-duration="1.2s">I'm <span>Nicole</span>, nice to meet you.</p>
+    <p class="wow fadeInUp" data-wow-delay="2.5s" data-wow-duration="1s">I like to think I'm many things. Right now, my passion lies in <span>Product Design</span>.</p>
+    <p class="wow fadeInUp" data-wow-delay="2.5s" data-wow-duration="1s">Previously designed at <span><a href="http://palantir.com" target="_blank">Palantir</a></span>. Currently looking for design opportunities this Fall.</p>
+    <a href="mailto:nicolekjiang@gmail.com"><button class="wow fadeInUp" data-wow-delay="3.5s" data-wow-duration="1s">Say hi</button></a>
+  </div>
+</section>
 
-	</body>
-	<script>
-		$('#cdn').hover(function(){
-			$('#bg').addClass('winter');
-		},function(){
-			$('#bg').removeClass('winter');
-		});
+<div class="container">
+  <div id="cbp-fbscroller" class="cbp-fbscroller portfolio-web">
+    <section id="fbsection1">
+      <div class="portfolio-caption wow fadeInUp">
+        <h2>Captain</br>401</h2>
+        <h3>Product Designer</h3>
+        <p>Interface design around retirement investiment planning. We wanted to create an easy to understand, trustworthy, and age friendly interface for all retirement fund investment.</p>
+        <button>View Project</button>
+      </div>
+    </section>
+    <section id="fbsection2">
+      <div class="portfolio-caption wow fadeInUp">
+        <h2>Mithril</h2>
+        <h3>Product Designer | PM</h3>
+        <p>Palantir Mithril is a product for financial trade alert triaging. The user (typically a trading manager) can detect, triage, investigate suspicous trading activities via Mithril interface.</p>
+        <button>View Project</button>
+      </div>
+    </section>
+    <section id="fbsection3">
+      <div class="portfolio-caption wow fadeInUp">
+        <h2>H + L</h2>
+        <h3>Designer</h3>
+        <p>Helen and Luiz are getting married! I designed some calligraphy for them, along with the website.</p>
+        <button>View Project</button>
+      </div>
+    </section>
+    <section id="fbsection4">
+      <div class="portfolio-caption wow fadeInUp">
+        <h2>Lotus</h2>
+        <h3>Designer | Developer</h3>
+        <p>Interface for dispatching car services. This web app maintains the client orders, keep up a channel for driver communications, and is used to take on dispatch tasks at real-time via sms and calls.</p>
+        <button>View Project</button>
+      </div>
+    </section>
+    <section id="fbsection5">
+      <div class="portfolio-caption wow fadeInUp">
+        <h2>Nathan's Exchange</h2>
+        <h3>Designer | Developer</h3>
+        <p>Connecting wedding vendors to wedding couples. I was responsible for creating the entire website and user interfaces for this product</p>
+        <button>View Project</button>
+      </div>
 
-	</script>
-	<script>
-		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    </section>
+</div>
+<div class="clearfix"></div>
 
-		  ga('create', 'UA-47014828-1', 'nicolejiang.com');
-		  ga('send', 'pageview');
+<div class="portfolio-mobile">
+  <section class="portfolio-single" id="mobile-1">
+   <div class="portfolio-caption left wow fadeIn animated" data-wow-duration="0.8s" data-wow-offset="10">
+      <h2>Ski Tracker</h2>
+        <h3>Designer</h3>
+        <p>Tracking ski activities on the fly. Tracking location, movement, altitude, and ski progress everywhere you go.</p>
+        <button>View Project</button>
+    </div>
+    <img src="../assets/mobile/1.png" class="mobile-img wow fadeInUp animated" data-wow-delay="0.5s" id="mobile-img-1">
 
-		</script>
+    <img src="../assets/mobile/2.png" class="mobile-img wow fadeInUp animated" data-wow-delay="0.8s" id="mobile-img-2">
+    <div class="clearfix"></div>
+  </section>
 
-</html>
+  <section class="portfolio-single" id="mobile-2">
+   <div class="portfolio-caption wow fadeIn animated" data-wow-delay="0s" data-wow-duration="0.8s" data-wow-offset="10">
+      <h2>Waitless</h2>
+        <h3>Designer</h3>
+        <p>Tracking ski activities on the fly. Tracking location, movement, altitude, and ski progress everywhere you go.</p>
+        <button>View Project</button>
+    </div>
+    <img src="../assets/mobile/3.png" class="mobile-img wow fadeInUp animated" data-wow-delay="0.5s" id="mobile-img-3">
+    
+    <img src="../assets/mobile/4.png" class="mobile-img wow fadeInUp animated" data-wow-delay="0.8s" id="mobile-img-4">
+    <div class="clearfix"></div>
+  </section>
+
+</div>
