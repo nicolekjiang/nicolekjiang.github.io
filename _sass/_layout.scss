@@ -341,10 +341,13 @@ html, body,
 .cbp-fbscroller section { 
     height: 100%; 
     width: 100%;
+    //max-width: 1400px;
+    margin: 0 auto;
 }
 
+
 .container{
-  max-width: 1400px;
+ // max-width: 1400px;
   margin: 0 auto;
 }
 
@@ -487,8 +490,8 @@ html, body,
 
 .portfolio-mobile{
     height: 100%;
-    width: 100vw;
-    margin-left: -10px;
+    width: 100%;
+    margin-left: 0px;
     position: relative;
     background: white;
     .portfolio-single{

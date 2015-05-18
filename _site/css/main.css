@@ -417,10 +417,10 @@ html, body,
 .cbp-fbscroller,
 .cbp-fbscroller section {
   height: 100%;
-  width: 100%; }
+  width: 100%;
+  margin: 0 auto; }
 
 .container {
-  max-width: 1400px;
   margin: 0 auto; }
 
 /* The nav is fixed on the right side  and we center it by translating it 50% 
@@ -543,8 +543,8 @@ html, body,
 
 .portfolio-mobile {
   height: 100%;
-  width: 100vw;
-  margin-left: -10px;
+  width: 100%;
+  margin-left: 0px;
   position: relative;
   background: white; }
   .portfolio-mobile .portfolio-single {
