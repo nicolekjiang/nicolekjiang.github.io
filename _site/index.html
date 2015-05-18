@@ -152,15 +152,15 @@
   </section>
 
   <section class="portfolio-single" id="mobile-2">
+    <img src="../assets/mobile/3.png" class="mobile-img wow fadeInUp animated" data-wow-delay="0.5s" id="mobile-img-3">
+    
+    <img src="../assets/mobile/4.png" class="mobile-img wow fadeInUp animated" data-wow-delay="0.8s" id="mobile-img-4">
    <div class="portfolio-caption wow fadeIn animated" data-wow-delay="0s" data-wow-duration="0.8s" data-wow-offset="10">
       <h2>Waitless</h2>
         <h3>Designer</h3>
         <p>Why wait for coffee inline when you can order ahead?</p>
         <button>View Project</button>
     </div>
-    <img src="../assets/mobile/3.png" class="mobile-img wow fadeInUp animated" data-wow-delay="0.5s" id="mobile-img-3">
-    
-    <img src="../assets/mobile/4.png" class="mobile-img wow fadeInUp animated" data-wow-delay="0.8s" id="mobile-img-4">
     <div class="clearfix"></div>
   </section>
 
@@ -201,13 +201,13 @@
   $(document).ready(function(){
     $.adaptiveBackground.run();
   });
-  $(function() {
-    cbpFixedScrollLayout.init();
-  });
-  if (Modernizr.touch) {
+  if (Modernizr.touch) { 
       skrollr.init().destroy();
   } else {   
       var s=skrollr.init();  
+  }
+  if($(window).width()>1100) {
+    cbpFixedScrollLayout.init();
   }
 
   $('body').colorScroll({

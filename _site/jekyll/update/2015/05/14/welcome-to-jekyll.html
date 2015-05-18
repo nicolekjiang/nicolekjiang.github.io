@@ -123,13 +123,13 @@
   $(document).ready(function(){
     $.adaptiveBackground.run();
   });
-  $(function() {
-    cbpFixedScrollLayout.init();
-  });
-  if (Modernizr.touch) {
+  if (Modernizr.touch) { 
       skrollr.init().destroy();
   } else {   
       var s=skrollr.init();  
+  }
+  if($(window).width()>1100) {
+    cbpFixedScrollLayout.init();
   }
 
   $('body').colorScroll({
