@@ -240,6 +240,8 @@ pre {
       .site-footer .footer-social li img {
         width: 18px;
         opacity: 0.35; }
+      .site-footer .footer-social li:hover img {
+        opacity: 0.8; }
 
 .footer-heading {
   text-align: center;
