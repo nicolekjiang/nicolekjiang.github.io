@@ -310,7 +310,7 @@
       width: 500px;
       position: absolute;
       text-align: center;
-      top: 100px;
+      top: 70px;
       left: 50%;
       margin-left: -250px;
       p{
@@ -510,6 +510,9 @@ html, body,
     .portfolio-caption{  
       display: block;
       width: 300px;
+      h2,p{
+        color: #444;
+      }
       button{
         color: white;
         background: #2C2C2F;

@@ -392,7 +392,7 @@ pre {
   width: 500px;
   position: absolute;
   text-align: center;
-  top: 100px;
+  top: 70px;
   left: 50%;
   margin-left: -250px; }
   .splash-wrapper p {
@@ -559,6 +559,8 @@ html, body,
   .portfolio-mobile .portfolio-caption {
     display: block;
     width: 300px; }
+    .portfolio-mobile .portfolio-caption h2, .portfolio-mobile .portfolio-caption p {
+      color: #444; }
     .portfolio-mobile .portfolio-caption button {
       color: white;
       background: #2C2C2F;
