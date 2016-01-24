@@ -1,0 +1,852 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,400italic,700,700italic,300,100,300italic');
+
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,300,500,600,700,800');
+::selection {
+  background: #5f68f3;
+  color: #ffffff;
+}
+::-moz-selection {
+  background: #5f68f3;
+  color: #ffffff;
+}
+::-o-selection {
+  background: #5f68f3;
+  color: #ffffff;
+}
+::-ms-selection {
+  background: #5f68f3;
+  color: #ffffff;
+}
+::-webkit-selection {
+  background: #5f68f3;
+  color: #ffffff;
+}
+ol,
+ul {
+  list-style: none;
+}
+*,
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video,
+input {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-family: 'Lato', sans-serif;
+  font-size: 11px;
+  font: inherit;
+  vertical-align: baseline;
+  text-decoration: none;
+  outline: none;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: visible;
+  -moz-backface-visibility: visible !important;
+  -o-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -ms-font-smoothing: antialiased;
+  -o-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  height: auto;
+}
+textarea {
+  -webkit-resize: none !important;
+  -moz-resize: none !important;
+  -ms-resize: none !important;
+  -o-resize: none !important;
+  resize: none !important;
+}
+a,
+input[type='submit'],
+button {
+  cursor: pointer;
+}
+input[type='text'],
+textarea {
+  cursor: text;
+}
+@font-face {
+  font-family: HelloBeautiful;
+  src: local('HelloBeautiful'), local('HelloBeautiful'), url(assets/HelloBeautiful.otf) format('opentype');
+}
+div,
+p,
+h2,
+h3 {
+  font-family: 'lato', sans-serif;
+  font-weight: 200;
+}
+h1 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+}
+body {
+  margin: 0px;
+}
+body .wrapper {
+  display: block;
+  width: auto;
+}
+body .width-wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+  position: relative;
+  height: inherit;
+}
+body #section-intro {
+  height: 110vh;
+  margin: auto;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#a2eae1+0,a2eae1+24,6c7eeb+98 */
+
+  background: #a2eae1;
+  /* Old browsers */
+
+  background: -moz-linear-gradient(-45deg, #a2eae1 0%, #a2eae1 24%, #6c7eeb 98%);
+  /* FF3.6-15 */
+
+  background: -webkit-linear-gradient(-45deg, #a2eae1 0%, #a2eae1 24%, #6c7eeb 98%);
+  /* Chrome10-25,Safari5.1-6 */
+
+  background: linear-gradient(135deg, #a2eae1 0%, #a2eae1 24%, #6c7eeb 98%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#a2eae1', endColorstr='#6c7eeb', GradientType=1);
+  /* IE6-9 fallback on horizontal gradient */
+
+}
+body #section-intro #white-bg {
+  display: block;
+  width: 58%;
+  min-width: 180px;
+  height: inherit;
+  background: white;
+  text-align: left;
+  margin-left: -24%;
+}
+body #section-intro #intro-bg {
+  width: 44%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  padding-top: 190px;
+  position: absolute;
+  left: 26.5%;
+  z-index: 20;
+}
+body #section-intro #solid-bg {
+  position: absolute;
+  z-index: 10;
+  left: 26%;
+  margin-top: 120px;
+  width: 54vw;
+  height: 550px;
+  background-color: rgba(256, 256, 256, 0.06);
+}
+body #section-intro .section-paragraph-1 {
+  display: inline-block;
+  float: left;
+  position: absolute;
+  top: 135px;
+  margin-left: 80px;
+  z-index: 30;
+}
+body #section-intro .section-paragraph-1 h1 {
+  color: #5F68F3;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 11px;
+  font-size: 46px;
+  margin-top: 8px;
+  margin-bottom: 0px;
+}
+body #section-intro .section-paragraph-1 h1 span {
+  font-family: 'HelloBeautiful';
+  color: rgba(255, 191, 248, 0.5);
+  font-size: 180px;
+  font-weight: normal;
+  text-transform: none;
+  letter-spacing: normal;
+  margin-right: -40px;
+  vertical-align: -webkit-baseline-middle;
+}
+body #section-intro .section-paragraph-1 #intro-content-1 {
+  font-size: 12px;
+  letter-spacing: 1.2px;
+  font-weight: 400;
+  opacity: 1;
+  line-height: 26px;
+  margin-left: 80px;
+  margin-top: -60px;
+  color: #CCCCCC;
+}
+body #section-intro .section-paragraph-2 {
+  display: inline-block;
+  position: absolute;
+  width: 20%;
+  top: 350px;
+  float: right;
+  margin-right: 150px;
+  right: 0;
+  z-index: 40;
+}
+body #section-intro .section-paragraph-2 #intro-title-2 {
+  display: block;
+  position: relative;
+  width: 62px;
+  background: #f5b5ec;
+  right: 0px;
+  z-index: 30;
+  color: white;
+  letter-spacing: 6px;
+  font-size: 12px;
+  font-weight: 500;
+  text-align: center;
+  padding: 23px 0px 23px 3px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+body #section-intro .section-paragraph-2 #intro-content-2 {
+  color: white;
+  font-style: italic;
+  z-index: 40;
+  line-height: 26px;
+  font-weight: 400;
+  margin-left: -20px;
+  letter-spacing: 0.5px;
+  font-size: 16px;
+}
+body #section-intro .section-contact {
+  display: inline-block;
+  position: absolute;
+  height: auto;
+  width: 100px;
+  float: right;
+  right: 0px;
+  top: 0px;
+  padding-left: 20px;
+  margin-right: 57px;
+  margin-top: -10px;
+  border-left: 1px solid rgba(255, 255, 255, 0.25);
+  padding-bottom: 10px;
+}
+body #section-intro .section-contact li {
+  list-style-type: none;
+  margin-top: 35px;
+  width: 18px;
+  height: 18px;
+  opacity: 0.4;
+  cursor: pointer;
+  -webkit-transition: all 0.25s ease 0s;
+  -moz-transition: all 0.25s ease 0s;
+  -o-transition: all 0.25s ease 0s;
+  -ms-transition: all 0.25s ease 0s;
+  transition: all 0.25s ease 0s;
+}
+body #section-intro .section-contact li:hover {
+  opacity: 1;
+  cusor: pointer;
+  -webkit-transition: all 0.25s ease 0s;
+  -moz-transition: all 0.25s ease 0s;
+  -o-transition: all 0.25s ease 0s;
+  -ms-transition: all 0.25s ease 0s;
+  transition: all 0.25s ease 0s;
+}
+body #section-intro .section-contact li img {
+  width: 100%;
+}
+body #section-intro .intro-divider {
+  width: 34px;
+  height: 8px;
+  background: rgba(74, 74, 74, 0.72);
+  margin: 20px 0px 30px;
+}
+body #section-intro h3 {
+  font-size: 10px;
+  position: absolute;
+  bottom: 15px;
+  font-weight: 600;
+  letter-spacing: 3px;
+  transform: rotate(-90deg);
+  transform-origin: 5px bottom 0;
+  left: 35%;
+  margin-top: 0px;
+  color: white;
+  opacity: 0.5;
+}
+body section.section-project {
+  display: block;
+  position: relative;
+  margin: 0 auto;
+  width: auto;
+  height: 100vh;
+}
+body section.section-project .project-background {
+  position: absolute;
+  z-index: -10;
+}
+body section.section-project .project-number {
+  font-size: 100px;
+  font-weight: 800;
+  position: absolute;
+  z-index: 20;
+  font-size: 170px;
+}
+body section.section-project .section-paragraph-1 {
+  display: block;
+  position: absolute;
+}
+body section.section-project .section-paragraph-1 .project-title {
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 5px;
+  display: inline;
+  color: white;
+  background: rgba(255, 223, 246, 0.9);
+  font-size: 22px;
+}
+body section.section-project .section-paragraph-1 .project-title-name {
+  font-weight: 700;
+  letter-spacing: 10px;
+  font-size: 48px;
+  text-transform: uppercase;
+  font-family: 'Raleway', sans-serif;
+  display: block;
+}
+body section.section-project .section-paragraph-1 .project-divider {
+  width: 34px;
+  height: 8px;
+  background: rgba(74, 74, 74, 0.72);
+  margin: 0px 0px 20px;
+}
+body section.section-project .section-paragraph-1 .project-content {
+  line-height: 22px;
+  font-style: italic;
+  font-weight: 400;
+  letter-spacing: 1px;
+  color: rgba(96, 96, 96, 0.9);
+}
+body section.section-project .project-cta {
+  position: absolute;
+  height: 90px;
+  width: 90px;
+  background: rgba(75, 62, 247, 0.9) url('../arrow.svg') center center no-repeat;
+  background-size: 23px 23px;
+  z-index: 80;
+  cursor: pointer;
+}
+body section.section-project .project-cta:hover {
+  background: #4b3ef7 url('../arrow.svg') center center no-repeat;
+  background-size: 23px 23px;
+  -webkit-transition: all 0.5s ease 0s;
+  -moz-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
+  -ms-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+}
+body section.section-project .project-img > img {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  -webkit-box-shadow: 0px 0px 32px 10px rgba(0, 0, 0, 0.18);
+  -moz-box-shadow: 0px 0px 32px 10px rgba(0, 0, 0, 0.18);
+  box-shadow: 0px 0px 32px 10px rgba(0, 0, 0, 0.18);
+  -webkit-transition: all 0.5s ease 0s;
+  -moz-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
+  -ms-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+}
+body section.section-project .project-img > img:hover {
+  -webkit-filter: grayscale(0%);
+  filter: grayscale(0%);
+  opacity: 1 !important;
+  -webkit-transition: all 0.5s ease 0s;
+  -moz-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
+  -ms-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+}
+body section.section-project .project-date {
+  border-top: 1px solid rgba(204, 204, 204, 0.48);
+  text-transform: uppercase;
+  color: #758CED;
+  font-weight: 600;
+  letter-spacing: 4.5px;
+  transform: rotate(-90deg);
+  transform-origin: left bottom 0;
+  padding-top: 4px;
+  font-size: 10px;
+}
+body section.section-project .project-extension {
+  position: absolute;
+  height: 500px;
+}
+body section#section-project-0 .project-background {
+  width: 34%;
+  border-right: 1px solid rgba(128, 128, 128, 0.25);
+  height: 620px;
+  margin-top: -20px;
+}
+body section#section-project-0 #project-bg {
+  width: 130px;
+  margin-top: -100px;
+}
+body section#section-project-0 .project-title {
+  transform: rotate(-90deg);
+  transform-origin: left bottom 0px;
+  margin-left: 34.5%;
+  margin-top: -340px;
+}
+body section#section-project-0 .project-title #title-box {
+  width: 16px;
+  height: 16px;
+  background-color: blue;
+  display: inline-block;
+}
+body section#section-project-0 .project-title h2 {
+  display: inline-block;
+  margin: 12px 0px;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+  font-weight: 800;
+  opacity: 0.5;
+}
+body section#section-project-0 h3 {
+  font-weight: 800;
+  font-size: 140px;
+  opacity: 0.05;
+  text-transform: uppercase;
+  margin-top: -110px;
+  letter-spacing: 10px;
+  margin-left: -170px;
+}
+body section#section-project-0 .title-description {
+  color: #738CEA;
+  font-weight: 600;
+  letter-spacing: 1.1px;
+  margin-left: 35%;
+  width: 190px;
+  font-size: 12px;
+  margin-top: -47px;
+}
+body section#section-project-1 {
+  margin-left: 190px;
+  margin-top: 380px;
+  margin-bottom: 140px;
+}
+body section#section-project-1 .project-background {
+  background-color: rgba(119, 147, 234, 0.09);
+  width: 760px;
+  height: 62vh;
+  left: 40%;
+  margin-left: -430px;
+  margin-top: 0px;
+}
+body section#section-project-1 .project-number {
+  color: #CBF3FF;
+  margin-top: -125px;
+  margin-left: 560px;
+}
+body section#section-project-1 .section-paragraph-1 {
+  width: 400px;
+  text-align: right;
+  margin-top: 310px;
+  margin-left: 0px;
+}
+body section#section-project-1 .section-paragraph-1 .project-title {
+  text-align: right;
+  padding: 27px 0px 0px 20px;
+}
+body section#section-project-1 .section-paragraph-1 .project-title-name {
+  color: #5F68F3;
+  text-align: right;
+  margin-bottom: 10px;
+  margin-top: 6px;
+  margin-right: -8px;
+}
+body section#section-project-1 .section-paragraph-1 .project-divider {
+  right: 0px;
+  position: absolute;
+}
+body section#section-project-1 .section-paragraph-1 .project-content {
+  margin-top: 40px;
+}
+body section#section-project-1 .project-cta {
+  margin-left: 755px;
+  margin-top: 295px;
+}
+body section#section-project-1 .project-img .project-img-1 {
+  width: 479px;
+  position: absolute;
+  z-index: 50;
+  top: 0px;
+  margin-top: -90px;
+  margin-left: 120px;
+}
+body section#section-project-1 .project-img .project-img-2 {
+  width: 315px;
+  position: absolute;
+  z-index: 60;
+  margin-left: 440px;
+  margin-top: 180px;
+}
+body section#section-project-1 .project-img .project-img-3 {
+  position: absolute;
+  z-index: 40;
+  margin-left: 667px;
+  width: 330px;
+  margin-top: 75px;
+}
+body section#section-project-1 .project-date {
+  width: 250px;
+  text-align: right;
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin: 150px -40px 0px -60px;
+}
+body section#section-project-1 .project-extension {
+  width: 40%;
+  bottom: 0px;
+  right: 0px;
+  margin-bottom: -300px;
+  border-left: 1px solid rgba(128, 128, 128, 0.25);
+}
+body section#section-project-2 {
+  margin-top: 460px;
+}
+body section#section-project-2 .project-background {
+  background-color: rgba(231, 199, 222, 0.2);
+  width: 74%;
+  height: 70vh;
+  margin-top: -100px;
+}
+body section#section-project-2 .project-number {
+  color: #A4D2EF;
+  position: absolute;
+  margin-left: 250px;
+  margin-top: -220px;
+}
+body section#section-project-2 .project-img .project-img-1 {
+  width: 520px;
+  z-index: 20;
+  left: 50%;
+  position: absolute;
+  margin-left: -365px;
+  margin-top: -15px;
+}
+body section#section-project-2 .project-img .project-img-2 {
+  width: auto;
+  z-index: 10;
+  position: absolute;
+  left: 55%;
+  margin-top: -160px;
+}
+body section#section-project-2 .project-img .project-img-3 {
+  z-index: -5;
+  opacity: 0.07;
+  margin-top: 190px;
+}
+body section#section-project-2 .section-paragraph-1 {
+  left: 860px;
+  margin-top: -320px;
+}
+body section#section-project-2 .section-paragraph-1 .project-title {
+  text-align: left;
+  color: #E6A1D2;
+  background: transparent;
+}
+body section#section-project-2 .section-paragraph-1 .project-title-name {
+  color: #5F68F3;
+  margin-top: 10px;
+}
+body section#section-project-2 .section-paragraph-1 .project-divider {
+  margin: 20px 0px 20px;
+}
+body section#section-project-2 .project-cta {
+  left: 50%;
+  margin-left: -365px;
+  margin-top: -219px;
+}
+body section#section-project-2 .project-date {
+  position: absolute;
+  right: 0px;
+  width: 250px;
+  transform: rotate(90deg);
+  transform-origin: 62%;
+  top: -10px;
+}
+body section#section-project-2 .project-extension {
+  left: 50%;
+  margin-left: -277px;
+  border-right: 1px solid rgba(128, 128, 128, 0.25);
+  margin-top: -130px;
+  height: 550px;
+}
+body section#section-project-3 {
+  margin-top: 400px;
+  margin-bottom: 200px;
+}
+body section#section-project-3 .project-background {
+  background-color: rgba(195, 220, 222, 0.2);
+  left: 50%;
+  margin-left: -450px;
+  margin-top: 20px;
+  width: 36%;
+  height: 74vh;
+}
+body section#section-project-3 .project-number {
+  color: #E7C7DE;
+  position: absolute;
+  left: 57%;
+  z-index: 40;
+  bottom: 140px;
+  opacity: 0.6;
+}
+body section#section-project-3 .project-img {
+  position: relative;
+  width: auto;
+}
+body section#section-project-3 .project-img .project-img-1 {
+  position: absolute;
+  z-index: 60;
+  width: 250px;
+  left: 50%;
+  margin-left: -125px;
+}
+body section#section-project-3 .project-img .project-img-2 {
+  position: absolute;
+  z-index: 20;
+  float: right;
+  margin-left: 50%;
+  margin-top: 40px;
+  -webkit-box-shadow: 0px 0px 32px 10px rgba(0, 0, 0, 0);
+  -moz-box-shadow: 0px 0px 32px 10px rgba(0, 0, 0, 0);
+  box-shadow: 0px 0px 32px 10px rgba(0, 0, 0, 0);
+}
+body section#section-project-3 .project-img .project-img-3 {
+  left: 50%;
+  margin-left: -322px;
+  margin-top: -170px;
+  position: absolute;
+  z-index: 40;
+}
+body section#section-project-3 .section-paragraph-1 {
+  width: 400px;
+  text-align: right;
+  margin-top: 260px;
+  margin-left: 50px;
+}
+body section#section-project-3 .section-paragraph-1 .project-title {
+  text-align: right;
+  padding: 27px 0px 0px 20px;
+  color: #E6A1D2;
+  background-color: transparent;
+}
+body section#section-project-3 .section-paragraph-1 .project-title-name {
+  color: #5F68F3;
+  text-align: right;
+  margin-bottom: 10px;
+  margin-top: 6px;
+  margin-right: -8px;
+}
+body section#section-project-3 .section-paragraph-1 .project-divider {
+  right: 0px;
+  position: absolute;
+}
+body section#section-project-3 .section-paragraph-1 .project-content {
+  margin-top: 40px;
+}
+body section#section-project-3 .project-cta {
+  left: 50%;
+  margin-left: -50px;
+  margin-top: -90px;
+}
+body section#section-project-3 .project-extension {
+  border-right: 1px solid rgba(128, 128, 128, 0.25);
+  margin-top: 400px;
+  left: 50%;
+  margin-left: -125px;
+  z-index: -5;
+}
+body section#section-project-3 .project-date {
+  width: 250px;
+  text-align: right;
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin: 65px -40px 0px 100px;
+}
+body footer {
+  width: 100%;
+  height: auto;
+  display: block;
+  background-color: #2A2A2A;
+}
+body footer #footer-width-wrapper {
+  width: 70%;
+  text-align: left;
+  clear: both;
+  margin-top: 20px;
+  padding: 120px 0px;
+  margin-left: 150px;
+}
+body footer .footer-divider {
+  width: 32px;
+  height: 6px;
+  background: rgba(151, 151, 151, 0.27);
+  margin: 0px 0px 40px;
+}
+body footer .extra-margin-70 {
+  margin-bottom: 70px;
+}
+body footer .extra-margin-5 {
+  margin-top: 5px;
+}
+body footer h2 {
+  color: #A5ABFF;
+  font-weight: 600;
+  letter-spacing: 1px;
+  font-size: 16px;
+  margin: 0px;
+}
+body footer p {
+  color: rgba(234, 234, 234, 0.85);
+  font-size: 13px;
+  font-weight: 300;
+  letter-spacing: 1px;
+  margin-top: 10px;
+}
+body footer ul {
+  display: block;
+  margin: 0px 0px;
+  padding-left: 0px;
+}
+body footer ul li {
+  display: inline-block;
+  width: 170px;
+}
+body footer ul li a {
+  text-decoration: none;
+  color: #A5CEFF;
+  font-size: 12px;
+  letter-spacing: 1.5px;
+  font-weight: 400;
+}
+body footer p#footer-note {
+  font-size: 12px;
+  letter-spacing: 0.6px;
+  margin-top: 120px;
+  opacity: 0.4;
+}
+.clearfix {
+  clear: both;
+}
+.no-box-shadow {
+  -webkit-box-shadow: 0px 0px 32px 10px rgba(0, 0, 0, 0);
+  -moz-box-shadow: 0px 0px 32px 10px rgba(0, 0, 0, 0);
+  box-shadow: 0px 0px 32px 10px rgba(0, 0, 0, 0);
+}
+.box-shadow {
+  -webkit-box-shadow: 0px 0px 32px 10px rgba(0, 0, 0, 0.18);
+  -moz-box-shadow: 0px 0px 32px 10px rgba(0, 0, 0, 0.18);
+  box-shadow: 0px 0px 32px 10px rgba(0, 0, 0, 0.18);
+}
+.intro-gradient {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#a2eae1+0,a2eae1+24,6c7eeb+98 */
+
+  background: #a2eae1;
+  /* Old browsers */
+
+  background: -moz-linear-gradient(-45deg, #a2eae1 0%, #a2eae1 24%, #6c7eeb 98%);
+  /* FF3.6-15 */
+
+  background: -webkit-linear-gradient(-45deg, #a2eae1 0%, #a2eae1 24%, #6c7eeb 98%);
+  /* Chrome10-25,Safari5.1-6 */
+
+  background: linear-gradient(135deg, #a2eae1 0%, #a2eae1 24%, #6c7eeb 98%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#a2eae1', endColorstr='#6c7eeb', GradientType=1);
+  /* IE6-9 fallback on horizontal gradient */
+
+}
