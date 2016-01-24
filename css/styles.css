@@ -200,6 +200,7 @@ body #section-intro #white-bg {
   width: 58%;
   min-width: 180px;
   height: inherit;
+  max-height: inherit;
   background: white;
   text-align: left;
   margin-left: -24%;
@@ -519,6 +520,7 @@ body section#section-project-1 .project-background {
   background-color: rgba(119, 147, 234, 0.09);
   width: 760px;
   height: 62vh;
+  max-height: 440px;
   left: 40%;
   margin-left: -430px;
   margin-top: 0px;
@@ -600,6 +602,7 @@ body section#section-project-2 .project-background {
   background-color: rgba(231, 199, 222, 0.2);
   width: 74%;
   height: 70vh;
+  max-height: 500px;
   margin-top: -100px;
 }
 body section#section-project-2 .project-number {
@@ -675,6 +678,7 @@ body section#section-project-3 .project-background {
   margin-top: 20px;
   width: 36%;
   height: 74vh;
+  max-height: 520px;
 }
 body section#section-project-3 .project-number {
   color: #E7C7DE;
