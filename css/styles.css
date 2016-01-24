@@ -170,6 +170,7 @@ body .wrapper {
 }
 body .width-wrapper {
   max-width: 1440px;
+  width: 100%;
   margin: 0 auto;
   position: relative;
   height: inherit;
@@ -533,7 +534,6 @@ body section#section-project-0 .title-description {
   margin-top: -47px;
 }
 body section#section-project-1 {
-  margin-left: 190px;
   margin-top: 380px;
   margin-bottom: 140px;
 }
@@ -542,20 +542,24 @@ body section#section-project-1 .project-background {
   width: 760px;
   height: 62vh;
   max-height: 440px;
-  left: 40%;
-  margin-left: -430px;
-  margin-top: 0px;
+  left: 50%;
+  position: absolute;
+  margin-left: -435px;
+  z-index: -20;
+  margin-top: -15px;
 }
 body section#section-project-1 .project-number {
   color: #CBF3FF;
-  margin-top: -125px;
-  margin-left: 560px;
+  margin-top: -135px;
+  margin-left: 115px;
+  left: 50%;
 }
 body section#section-project-1 .section-paragraph-1 {
   width: 400px;
   text-align: right;
-  margin-top: 310px;
-  margin-left: 0px;
+  margin-top: 295px;
+  margin-left: -455px;
+  left: 50%;
 }
 body section#section-project-1 .section-paragraph-1 .project-title {
   text-align: right;
@@ -576,38 +580,41 @@ body section#section-project-1 .section-paragraph-1 .project-content {
   margin-top: 40px;
 }
 body section#section-project-1 .project-cta {
-  margin-left: 755px;
-  margin-top: 295px;
+  margin-left: 290px;
+  margin-top: 280px;
+  left: 50%;
 }
 body section#section-project-1 .project-img .project-img-1 {
-  width: 479px;
+  width: 480px;
   position: absolute;
   z-index: 50;
   top: 0px;
-  margin-top: -90px;
-  margin-left: 120px;
+  margin-top: -110px;
+  left: 50%;
+  margin-left: -330px;
 }
 body section#section-project-1 .project-img .project-img-2 {
-  width: 315px;
+  width: 279px;
   position: absolute;
   z-index: 60;
-  margin-left: 440px;
+  margin-left: 10px;
   margin-top: 180px;
+  left: 50%;
 }
 body section#section-project-1 .project-img .project-img-3 {
   position: absolute;
   z-index: 40;
-  margin-left: 667px;
+  margin-left: 217px;
   width: 330px;
-  margin-top: 75px;
+  margin-top: 60px;
+  left: 50%;
 }
 body section#section-project-1 .project-date {
   width: 250px;
   text-align: right;
   position: absolute;
-  left: 0;
-  top: 0;
-  margin: 150px -40px 0px -60px;
+  left: 8%;
+  top: 125px;
 }
 body section#section-project-1 .project-extension {
   width: 40%;
