@@ -146,8 +146,8 @@ textarea {
   cursor: text;
 }
 @font-face {
-  font-family: HelloBeautiful;
-  src: local('HelloBeautiful'), local('HelloBeautiful'), url(assets/HelloBeautiful.otf) format('opentype');
+  font-family: "HelloBeautiful";
+  src: url('HelloBeautiful.otf') format('opentype');
 }
 div,
 p,
@@ -175,6 +175,7 @@ body .width-wrapper {
 }
 body #section-intro {
   height: 110vh;
+  max-height: 780px;
   margin: auto;
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#a2eae1+0,a2eae1+24,6c7eeb+98 */
 
@@ -240,7 +241,7 @@ body #section-intro .section-paragraph-1 h1 {
   margin-bottom: 0px;
 }
 body #section-intro .section-paragraph-1 h1 span {
-  font-family: 'HelloBeautiful';
+  font-family: "HelloBeautiful", "Helvetica Neue", Arial, sans-serif;
   color: rgba(255, 191, 248, 0.5);
   font-size: 180px;
   font-weight: normal;
@@ -359,6 +360,7 @@ body section.section-project {
   margin: 0 auto;
   width: auto;
   height: 100vh;
+  max-height: 780px;
 }
 body section.section-project .project-background {
   position: absolute;
@@ -702,6 +704,7 @@ body section#section-project-3 .project-img .project-img-2 {
   -webkit-box-shadow: 0px 0px 32px 10px rgba(0, 0, 0, 0);
   -moz-box-shadow: 0px 0px 32px 10px rgba(0, 0, 0, 0);
   box-shadow: 0px 0px 32px 10px rgba(0, 0, 0, 0);
+  right: 0px;
 }
 body section#section-project-3 .project-img .project-img-3 {
   left: 50%;
