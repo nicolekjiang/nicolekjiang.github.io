@@ -162,6 +162,7 @@ h1 {
 }
 body {
   margin: 0px;
+  width: 100%;
 }
 body .wrapper {
   display: block;
@@ -177,6 +178,7 @@ body #section-intro {
   height: 110vh;
   max-height: 780px;
   margin: auto;
+  width: 100%;
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#a2eae1+0,a2eae1+24,6c7eeb+98 */
 
   background: #a2eae1;
@@ -195,22 +197,28 @@ body #section-intro {
   /* IE6-9 fallback on horizontal gradient */
 
 }
-body #section-intro #white-bg {
+body #section-intro .white-bg {
   display: block;
-  width: 58%;
+  width: 34%;
   min-width: 180px;
   height: inherit;
   max-height: inherit;
   background: white;
   text-align: left;
-  margin-left: -24%;
+  position: absolute;
+  top: 0;
+}
+body #section-intro #img-bg {
+  padding-top: 200px;
+  position: relative;
+  height: 85vh;
+  max-height: 720px;
 }
 body #section-intro #intro-bg {
   width: 44%;
   height: auto;
   display: block;
   margin: 0 auto;
-  padding-top: 190px;
   position: absolute;
   left: 26.5%;
   z-index: 20;
@@ -219,7 +227,7 @@ body #section-intro #solid-bg {
   position: absolute;
   z-index: 10;
   left: 26%;
-  margin-top: 120px;
+  margin-top: -60px;
   width: 54vw;
   height: 550px;
   background-color: rgba(256, 256, 256, 0.06);
@@ -283,6 +291,7 @@ body #section-intro .section-paragraph-2 #intro-title-2 {
   padding: 23px 0px 23px 3px;
   text-transform: uppercase;
   font-weight: 600;
+  margin-bottom: 20px;
 }
 body #section-intro .section-paragraph-2 #intro-content-2 {
   color: white;
@@ -346,6 +355,10 @@ body #section-intro h3 {
   font-weight: 600;
   letter-spacing: 3px;
   transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
   transform-origin: 5px bottom 0;
   left: 35%;
   margin-top: 0px;
@@ -452,6 +465,10 @@ body section.section-project .project-date {
   font-weight: 600;
   letter-spacing: 4.5px;
   transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
   transform-origin: left bottom 0;
   padding-top: 4px;
   font-size: 10px;
@@ -472,6 +489,10 @@ body section#section-project-0 #project-bg {
 }
 body section#section-project-0 .project-title {
   transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
   transform-origin: left bottom 0px;
   margin-left: 34.5%;
   margin-top: -340px;
@@ -489,11 +510,14 @@ body section#section-project-0 .project-title h2 {
   letter-spacing: 6px;
   font-weight: 800;
   opacity: 0.5;
+  font-size: 22px;
+  color: #383838;
+  font-family: 'Raleway', sans-serif;
 }
 body section#section-project-0 h3 {
   font-weight: 800;
   font-size: 140px;
-  opacity: 0.05;
+  opacity: 0.03;
   text-transform: uppercase;
   margin-top: -110px;
   letter-spacing: 10px;
@@ -654,6 +678,10 @@ body section#section-project-2 .project-date {
   right: 0px;
   width: 250px;
   transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
   transform-origin: 62%;
   top: -10px;
 }
