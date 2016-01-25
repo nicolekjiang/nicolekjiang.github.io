@@ -14,18 +14,18 @@
     <link rel="stylesheet" href="css/styles.css">
 
     <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
-
+    <script type="text/javascript" src="js/jquery.min.js"></script>
   </head>
   <body>
       <section id="section-intro" class="wrapper">
         <div class="white-bg"></div>
         <div class="width-wrapper">
-            <div id="img-bg">
-                <img src="1.png" id="intro-bg">
+            <div id="img-bg" data-0="padding-top:200px; opacity: 1" data-500="padding-top:120px; opacity: 0.7">
+                <img class="skrollable skrollable-between" src="1.png" id="intro-bg">
                 <div id="solid-bg"></div>
                 <h3>DESIGNED & CODED IN 2016</h3>
             </div>
-            <div class="section-paragraph-1">
+            <div class="section-paragraph-1" data-0="top:135px; opacity: 1" data-300="top:300px; opacity: 0">
                 <h1 id="intro-title-1"> Between</h1>
                 <div id="intro-content-1">
                     <div class="intro-divider"></div>
@@ -34,7 +34,7 @@
                     Rationale & Intuition
                 </div>
             </div>  
-            <div class="section-paragraph-2">
+            <div class="section-paragraph-2" data-0="top:350; opacity: 1" data-300="top:450px; opacity: 0">
                 <h2 id="intro-title-2">nkj</h2>
                 <p id="intro-content-2">Last year I learned a lot about myself. <br>
                 I travelled 20+ countries. <br>
@@ -54,13 +54,13 @@
         </div>
       </section>
 
-      <section id="section-project-0">
+      <section id="section-project-0" data-68="margin-top:0;" data-640="margin-top:100px;">
         <div class="width-wrapper">
             <div class="project-background">
                 <img src="2.png" id="project-bg">
                 <h3>Projects</h3>
             </div>      
-            <div class="project-title">
+            <div class="project-title" data-290="margin-top:-250px;" data-1100="margin-top: -500px;">
                 <h2>Projects</h2>  
                 <div id="title-box"></div>
             </div>  
@@ -70,7 +70,7 @@
             </p>
         </div>
       </section>
-      <section id="section-project-1" class="section-project">
+      <section id="section-project-1" class="section-project" data-650="margin-top:380px;" data-1100="margin-top:310px;">
         <div class="width-wrapper">
             <div class="project-background"></div>
             <h2 class="project-number">01</h2>
@@ -181,6 +181,10 @@
       </footer>
 
 
+      <!-- Javascript time -->
 
-
+      <script type="text/javascript" src="js/skrollr.min.js"></script>
+        <script type="text/javascript">
+            var s = skrollr.init();
+        </script>
   </body>
