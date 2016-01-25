@@ -485,8 +485,8 @@ body section#section-project-0 .project-background {
   margin-top: -20px;
 }
 body section#section-project-0 #project-bg {
-  width: 130px;
-  margin-top: -100px;
+  margin-top: -120px;
+  margin-left: -450px;
 }
 body section#section-project-0 .project-title {
   transform: rotate(-90deg);
@@ -665,6 +665,9 @@ body section#section-project-2 .project-img .project-img-3 {
   opacity: 0.07;
   margin-top: 190px;
 }
+body section#section-project-2 .project-img .project-img-3:hover {
+  opacity: 0.2 !important;
+}
 body section#section-project-2 .section-paragraph-1 {
   left: 50%;
   margin-top: -350px;
@@ -711,7 +714,7 @@ body section#section-project-3 {
   margin-bottom: 200px;
 }
 body section#section-project-3 .project-background {
-  background-color: rgba(195, 220, 222, 0.2);
+  background-color: rgba(195, 220, 222, 0.25);
   left: 50%;
   margin-left: -450px;
   margin-top: 20px;
@@ -724,10 +727,9 @@ body section#section-project-3 .project-number {
   position: absolute;
   left: 50%;
   z-index: 40;
-  bottom: 140px;
   opacity: 0.6;
   margin-left: 60px;
-  margin-bottom: 10px;
+  margin-top: 360px;
 }
 body section#section-project-3 .project-img {
   position: relative;
@@ -830,6 +832,12 @@ body footer .extra-margin-70 {
 body footer .extra-margin-5 {
   margin-top: 5px;
 }
+body footer .extra-margin-10 {
+  margin-top: 10px;
+}
+body footer .extra-margin-15 {
+  margin-top: 15px;
+}
 body footer h2 {
   color: #A5ABFF;
   font-weight: 600;
@@ -855,10 +863,47 @@ body footer ul li {
 }
 body footer ul li a {
   text-decoration: none;
-  color: #A5CEFF;
+  color: rgba(165, 206, 255, 0.8);
   font-size: 12px;
   letter-spacing: 1.5px;
   font-weight: 400;
+  -webkit-transition: all 0.25s ease 0s;
+  -moz-transition: all 0.25s ease 0s;
+  -o-transition: all 0.25s ease 0s;
+  -ms-transition: all 0.25s ease 0s;
+  transition: all 0.25s ease 0s;
+}
+body footer ul li:hover a {
+  color: #a5ceff;
+  -webkit-transition: all 0.25s ease 0s;
+  -moz-transition: all 0.25s ease 0s;
+  -o-transition: all 0.25s ease 0s;
+  -ms-transition: all 0.25s ease 0s;
+  transition: all 0.25s ease 0s;
+}
+body footer ul.section-contact {
+  margin-top: 30px;
+}
+body footer ul.section-contact li {
+  width: 18px;
+  opacity: 0.1;
+  margin-right: 15px;
+  -webkit-transition: all 0.5s ease 0s;
+  -moz-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
+  -ms-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+}
+body footer ul.section-contact li img {
+  width: 100%;
+}
+body footer ul.section-contact li:hover {
+  opacity: 0.8;
+  -webkit-transition: all 0.5s ease 0s;
+  -moz-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
+  -ms-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
 }
 body footer p#footer-note {
   font-size: 12px;
