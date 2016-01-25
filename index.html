@@ -217,9 +217,13 @@
 
       <script type="text/javascript" src="js/skrollr.min.js"></script>
         <script type="text/javascript">
-            var s = skrollr.init({
-            forceHeight:false
-            });
+            c = detectmob();
+            console.log('check is '+ c);
+            if (c==false){
+                var s = skrollr.init({
+                forceHeight:false
+                });
+            }
 
             var excludeList = [5, 7, 8, 10, 11];
 
@@ -242,72 +246,27 @@
                 var l = $(this).parent().find('img').not(this).not($('.project-img-8'));
                 l.fadeTo('medium',1);
             });
+            function detectmob() { 
+                 if( navigator.userAgent.match(/Android/i)
+                 || navigator.userAgent.match(/webOS/i)
+                 || navigator.userAgent.match(/iPhone/i)
+                 || navigator.userAgent.match(/iPad/i)
+                 || navigator.userAgent.match(/iPod/i)
+                 || navigator.userAgent.match(/BlackBerry/i)
+                 || navigator.userAgent.match(/Windows Phone/i)
+                 ){
+                return true;
+              }
+             else {
+                return false;
+              }
+            }
+
         </script>
 
-        <script src="js/imagesloaded.pkgd.min.js"></script>
+    <script src="js/imagesloaded.pkgd.min.js"></script>
     <script src="js/masonry.pkgd.min.js"></script>
     <script src="js/classie.js"></script>
-    <script src="js/main.js"></script>
-    <script>
-        (function() {
-            var support = { transitions: Modernizr.csstransitions },
-                // transition end event name
-                transEndEventNames = { 'WebkitTransition': 'webkitTransitionEnd', 'MozTransition': 'transitionend', 'OTransition': 'oTransitionEnd', 'msTransition': 'MSTransitionEnd', 'transition': 'transitionend' },
-                transEndEventName = transEndEventNames[ Modernizr.prefixed( 'transition' ) ],
-                onEndTransition = function( el, callback ) {
-                    var onEndCallbackFn = function( ev ) {
-                        if( support.transitions ) {
-                            if( ev.target != this ) return;
-                            this.removeEventListener( transEndEventName, onEndCallbackFn );
-                        }
-                        if( callback && typeof callback === 'function' ) { callback.call(this); }
-                    };
-                    if( support.transitions ) {
-                        el.addEventListener( transEndEventName, onEndCallbackFn );
-                    }
-                    else {
-                        onEndCallbackFn();
-                    }
-                };
-
-            new GridFx(document.querySelector('.boo'), {
-                imgPosition : {
-                    x : 3,
-                    y : 0.75
-                },
-                pagemargin : 50,
-                onOpenItem : function(instance, item) {
-                    instance.items.forEach(function(el) {
-                        if(item != el) {
-                            var delay = Math.floor(Math.random() * 150);
-                            el.style.WebkitTransition = 'opacity .4s ' + delay + 'ms cubic-bezier(.7,0,.3,1), -webkit-transform .4s ' + delay + 'ms cubic-bezier(.7,0,.3,1)';
-                            el.style.transition = 'opacity .4s ' + delay + 'ms cubic-bezier(.7,0,.3,1), transform .4s ' + delay + 'ms cubic-bezier(.7,0,.3,1)';
-                            
-                            el.style.WebkitTransform = 'translate3d(0,400px,0)';
-                            el.style.transform = 'translate3d(0,400px,0)';
-                            el.style.opacity = 0;
-                        }
-                    });
-                },
-                onCloseItem : function(instance, item) {
-                    instance.items.forEach(function(el) {
-                        if(item != el) {
-                            el.style.WebkitTransition = 'opacity .3s, -webkit-transform .3s';
-                            el.style.transition = 'opacity .3s, transform .3s';
-
-                            el.style.WebkitTransform = 'translate3d(0,0,0)';
-                            el.style.transform = 'translate3d(0,0,0)';
-                            el.style.opacity = 1;
-
-                            onEndTransition(el, function() {
-                                el.style.transition = 'none';
-                                el.style.WebkitTransform = 'none';
-                            });
-                        }
-                    });
-                }
-            });
-        })();
-    </script>
+    <script src="js/main.js"></script
 
   </body>
