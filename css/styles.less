@@ -269,7 +269,9 @@ body{
 			    -webkit-filter: grayscale(100%);
 			    filter: grayscale(100%);
 			    .box-shadow;
-		    	.transition(0.5s);
+			    &:not(:hover){
+			    	//.transition(0.5s);
+			    }
 			    &:hover{
 			    	-webkit-filter: grayscale(0%);
 			    	filter: grayscale(0%);
