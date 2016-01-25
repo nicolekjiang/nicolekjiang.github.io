@@ -21,9 +21,7 @@
     <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
     <script type="text/javascript" src="js/jquery.min.js"></script>
   </head>
-  <body id="skrollr-body">
-
-
+  <body>
       <section id="section-intro" class="wrapper" data-460="opacity:1" data-750="opacity:0">
         <div class="white-bg"></div>
         <div class="width-wrapper">
@@ -220,32 +218,37 @@
             c = detectmob();
             console.log('check is '+ c);
             if (c==false){
+                //initialize skrollr
                 var s = skrollr.init({
                 forceHeight:false
                 });
-            }
 
-            var excludeList = [5, 7, 8, 10, 11];
+                //dim images
+                var excludeList = [5, 7, 8, 10, 11];
+                $('img').hover(function(){
+                    console.log('hovered');
+                    var str = $(this).attr('class');
+                    str = str.replace('project-img-', '');
+                    str = str.replace('skrollable-after', '');
+                    str = str.replace('skrollable-between', '');
+                    str = str.replace('skrollable', '');
+                    m = excludeList.indexOf(parseInt(str));
+                    if ( m < 0){
 
-            //dim images
-            $('img').hover(function(){
-                console.log('hovered');
-                var str = $(this).attr('class');
-                str = str.replace('project-img-', '');
-                str = str.replace('skrollable-after', '');
-                str = str.replace('skrollable-between', '');
-                str = str.replace('skrollable', '');
-                m = excludeList.indexOf(parseInt(str));
-                if ( m < 0){
+                        var l = $(this).parent().find('img').not(this).not($('.project-img-8')); 
+                        l.fadeTo('fast',0.25);
 
-                    var l = $(this).parent().find('img').not(this).not($('.project-img-8')); 
-                    l.fadeTo('fast',0.25);
+                    }
+                }, function(){
+                    var l = $(this).parent().find('img').not(this).not($('.project-img-8'));
+                    l.fadeTo('medium',1);
+                });
 
-                }
-            }, function(){
-                var l = $(this).parent().find('img').not(this).not($('.project-img-8'));
-                l.fadeTo('medium',1);
-            });
+            };
+
+            
+
+            
             function detectmob() { 
                  if( navigator.userAgent.match(/Android/i)
                  || navigator.userAgent.match(/webOS/i)
