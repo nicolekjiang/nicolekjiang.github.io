@@ -706,8 +706,9 @@ body section#section-project-2 .project-extension {
   height: 550px;
 }
 body section#section-project-3 {
-  margin-top: 400px;
-  margin-bottom: 200px;
+  overflow-x: hidden;
+  padding-top: 400px;
+  padding-bottom: 200px;
 }
 body section#section-project-3 .project-background {
   background-color: rgba(201, 227, 255, 0.25);
@@ -790,7 +791,7 @@ body section#section-project-3 .project-cta {
 }
 body section#section-project-3 .project-extension {
   border-right: 1px solid rgba(128, 128, 128, 0.25);
-  margin-top: 400px;
+  margin-top: 500px;
   left: 50%;
   margin-left: -125px;
   z-index: -5;
