@@ -579,7 +579,7 @@ body section#section-project-1 .project-cta {
   margin-top: 280px;
   left: 50%;
 }
-body section#section-project-1 .project-img .project-img-1 {
+body section#section-project-1 .project-img .project-img-3 {
   width: 480px;
   position: absolute;
   z-index: 50;
@@ -588,7 +588,7 @@ body section#section-project-1 .project-img .project-img-1 {
   left: 50%;
   margin-left: -330px;
 }
-body section#section-project-1 .project-img .project-img-2 {
+body section#section-project-1 .project-img .project-img-4 {
   width: 279px;
   position: absolute;
   z-index: 60;
@@ -596,7 +596,7 @@ body section#section-project-1 .project-img .project-img-2 {
   margin-top: 180px;
   left: 50%;
 }
-body section#section-project-1 .project-img .project-img-3 {
+body section#section-project-1 .project-img .project-img-5 {
   position: absolute;
   z-index: 40;
   margin-left: 217px;
@@ -616,7 +616,7 @@ body section#section-project-1 .project-extension {
   bottom: 0px;
   right: 0px;
   margin-bottom: -300px;
-  border-left: 1px solid rgba(128, 128, 128, 0.25);
+  border-left: 1px solid rgba(128, 128, 128, 0.15);
 }
 body section#section-project-2 {
   margin-top: 450px;
@@ -639,7 +639,7 @@ body section#section-project-2 .project-number {
 body section#section-project-2 .project-img {
   width: 100%;
 }
-body section#section-project-2 .project-img .project-img-1 {
+body section#section-project-2 .project-img .project-img-6 {
   width: 520px;
   z-index: 20;
   left: 50%;
@@ -647,7 +647,7 @@ body section#section-project-2 .project-img .project-img-1 {
   margin-left: -365px;
   margin-top: -15px;
 }
-body section#section-project-2 .project-img .project-img-2 {
+body section#section-project-2 .project-img .project-img-7 {
   width: 250px;
   z-index: 10;
   position: absolute;
@@ -655,12 +655,12 @@ body section#section-project-2 .project-img .project-img-2 {
   margin-top: -150px;
   margin-left: 80px;
 }
-body section#section-project-2 .project-img .project-img-3 {
+body section#section-project-2 .project-img .project-img-8 {
   z-index: -5;
   opacity: 0.07;
   margin-top: 190px;
 }
-body section#section-project-2 .project-img .project-img-3:hover {
+body section#section-project-2 .project-img .project-img-8:hover {
   opacity: 0.2 !important;
 }
 body section#section-project-2 .section-paragraph-1 {
@@ -701,7 +701,7 @@ body section#section-project-2 .project-date {
 body section#section-project-2 .project-extension {
   left: 50%;
   margin-left: -277px;
-  border-right: 1px solid rgba(128, 128, 128, 0.25);
+  border-right: 1px solid rgba(128, 128, 128, 0.15);
   margin-top: -130px;
   height: 550px;
 }
@@ -711,16 +711,17 @@ body section#section-project-3 {
   padding-bottom: 200px;
 }
 body section#section-project-3 .project-background {
-  background-color: rgba(201, 227, 255, 0.25);
+  background-color: #EFF8FF;
   left: 50%;
   margin-left: -450px;
   margin-top: 20px;
   width: 36%;
   height: 74vh;
   max-height: 520px;
+  z-index: 10;
 }
 body section#section-project-3 .project-number {
-  color: #E7C7DE;
+  color: rgba(231, 199, 222, 0.61);
   position: absolute;
   left: 50%;
   z-index: 40;
@@ -732,23 +733,23 @@ body section#section-project-3 .project-img {
   position: relative;
   width: 100%;
 }
-body section#section-project-3 .project-img .project-img-1 {
+body section#section-project-3 .project-img .project-img-9 {
   position: absolute;
   z-index: 60;
   width: 240px;
   left: 50%;
   margin-left: -125px;
 }
-body section#section-project-3 .project-img .project-img-2 {
+body section#section-project-3 .project-img .project-img-10 {
   position: absolute;
-  z-index: 20;
+  z-index: 5;
   margin-top: 20px;
   right: 0px;
   -webkit-box-shadow: 0px 0px 32px 10px rgba(0, 0, 0, 0);
   -moz-box-shadow: 0px 0px 32px 10px rgba(0, 0, 0, 0);
   box-shadow: 0px 0px 32px 10px rgba(0, 0, 0, 0);
 }
-body section#section-project-3 .project-img .project-img-3 {
+body section#section-project-3 .project-img .project-img-11 {
   left: 50%;
   margin-left: -310px;
   margin-top: -140px;
@@ -762,6 +763,8 @@ body section#section-project-3 .section-paragraph-1 {
   margin-top: 235px;
   margin-left: -580px;
   left: 50%;
+  position: absolute;
+  z-index: 10;
 }
 body section#section-project-3 .section-paragraph-1 .project-title {
   text-align: right;
@@ -790,11 +793,11 @@ body section#section-project-3 .project-cta {
   margin-top: -90px;
 }
 body section#section-project-3 .project-extension {
-  border-right: 1px solid rgba(128, 128, 128, 0.25);
+  border-right: 1px solid rgba(128, 128, 128, 0.15);
   margin-top: 500px;
   left: 50%;
   margin-left: -125px;
-  z-index: -5;
+  z-index: -15;
 }
 body section#section-project-3 .project-date {
   width: 250px;
@@ -813,7 +816,6 @@ body footer #footer-width-wrapper {
   width: 70%;
   text-align: left;
   clear: both;
-  margin-top: 20px;
   padding: 120px 0px;
   margin-left: 150px;
 }
@@ -920,6 +922,14 @@ body footer p#footer-note {
   -webkit-box-shadow: 0px 0px 32px 10px rgba(0, 0, 0, 0.18);
   -moz-box-shadow: 0px 0px 32px 10px rgba(0, 0, 0, 0.18);
   box-shadow: 0px 0px 32px 10px rgba(0, 0, 0, 0.18);
+}
+.dim {
+  opacity: 0.1 !important;
+  -webkit-transition: all 0.25px ease 0s;
+  -moz-transition: all 0.25px ease 0s;
+  -o-transition: all 0.25px ease 0s;
+  -ms-transition: all 0.25px ease 0s;
+  transition: all 0.25px ease 0s;
 }
 .intro-gradient {
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#a2eae1+0,a2eae1+24,6c7eeb+98 */

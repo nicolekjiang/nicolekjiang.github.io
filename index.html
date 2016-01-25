@@ -76,9 +76,9 @@
             <h2 class="project-number" data-600="opacity:0.2;margin-top:-380px" data-950="opacity:1;margin-top:-135px;">01</h2>
 
             <div class="project-img">
-                <img src="3.jpg" class="project-img-1"data-800="margin-top:-170px; opacity: 0.05" data-950="margin-top:-110px;opacity: 1">
-                <img src="4.png" class="project-img-2" data-840="margin-top:300px; opacity: 0.1" data-1030="margin-top:180px;opacity: 1">
-                <img src="5.png" class="project-img-3" data-820="margin-left:267px; opacity: 0.1" data-990="margin-left:217px; opacity: 1">
+                <img src="3.jpg" class="project-img-3"data-800="margin-top:-170px; opacity: 0.05" data-950="margin-top:-110px;opacity: 1">
+                <img src="4.png" class="project-img-4" data-840="margin-top:300px; opacity: 0.1" data-1030="margin-top:180px;opacity: 1">
+                <img src="5.png" class="project-img-5" data-820="margin-left:267px; opacity: 0.1" data-990="margin-left:217px; opacity: 1">
 
             </div>
             <div class="section-paragraph-1">
@@ -104,9 +104,9 @@
             <h2 class="project-number" data-1340="opacity:0.1;margin-top:-420px" data-1900="opacity:1;margin-top:-220px;">02</h2>
 
             <div class="project-img"> 
-                <img src="6.jpg" class="project-img-1" data-1530="opacity:0.2;" data-2080="opacity:1">
-                <img src="7.png" class="project-img-2" data-1530="opacity:0.1;margin-top:-270px" data-2080="opacity:1;margin-top:-150px;">
-                <img src="8.png" class="project-img-3" data-1940="opacity:0.0" data-2150="opacity:0.07">
+                <img src="6.jpg" class="project-img-6" data-1530="opacity:0.2;" data-2080="opacity:1">
+                <img src="7.png" class="project-img-7" data-1530="opacity:0.1;margin-top:-270px" data-2080="opacity:1;margin-top:-150px;">
+                <img src="8.png" class="project-img-8" data-1940="opacity:0.0" data-2150="opacity:0.07">
             </div>
             <div class="section-paragraph-1" data-1890="opacity:0;margin-top:-415px; margin-left:340px" data-2120="opacity:1;margin-top:-360px;margin-left:230px">
                 <div class="project-title">Project</div>
@@ -131,9 +131,9 @@
             <h2 class="project-number" data-3130="opacity:0.1;" data-3280="opacity:1;">03</h2>
 
             <div class="project-img">
-                <img src="9.png" class="project-img-1">
-                <img src="10.png" class="project-img-2" data-2830="opacity:0;margin-right:-80px" data-3280="opacity:1;margin-right:0px;">
-                <img src="11.png" class="project-img-3" data-2690="opacity:0.1;margin-top:-280px" data-3090="opacity:1;margin-top:-140px;">
+                <img src="9.png" class="project-img-9">
+                <img src="10.png" class="project-img-10" data-2830="opacity:0;margin-right:-80px" data-3280="opacity:1;margin-right:0px;">
+                <img src="11.png" class="project-img-11" data-2690="opacity:0.1;margin-top:-280px" data-3090="opacity:1;margin-top:-140px;">
             </div>
             <div class="section-paragraph-1" data-3100="opacity:0.1;margin-top:300px" data-3290="opacity:1;margin-top:225px;">
                 <div class="project-title">Project</div>
@@ -144,7 +144,7 @@
                 I tried design + management<br>
                 I’m a full-stack design with passion</div>
             </div>
-            <a href="https://dribbble.com/shots/2318553-Home-page-for-personal-finance" target="_blank"><div class="project-cta" data-2850="opacity:0.1;" data-3060="opacity:1;"></div></a>
+            <a href="https://dribbble.com/shots/2318553-Home-page-for-personal-finance" target="_blank"><div class="project-cta" data-2900="opacity:0.1;" data-3100="opacity:1;"></div></a>
             <div class="project-date">October 2015</div>
             <div class="project-extension"></div>
         </div>
@@ -187,6 +187,28 @@
         <script type="text/javascript">
             var s = skrollr.init({
             forceHeight:false
+            });
+
+            var excludeList = [5, 7, 8, 10, 11];
+
+            //dim images
+            $('img').hover(function(){
+                console.log('hovered');
+                var str = $(this).attr('class');
+                str = str.replace('project-img-', '');
+                str = str.replace('skrollable-after', '');
+                str = str.replace('skrollable-between', '');
+                str = str.replace('skrollable', '');
+                m = excludeList.indexOf(parseInt(str));
+                if ( m < 0){
+
+                    var l = $(this).parent().find('img').not(this).not($('.project-img-8')); 
+                    l.fadeTo('fast',0.25);
+
+                }
+            }, function(){
+                var l = $(this).parent().find('img').not(this).not($('.project-img-8'));
+                l.fadeTo('medium',1);
             });
         </script>
   </body>
