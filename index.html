@@ -10,13 +10,20 @@
     <meta name="og:image" content="">
     <meta name="og:title" content="NKJ">
 
+    <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.3.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/style3.css" />
+    <script src="js/modernizr-custom.js"></script>
+
+
     <!-- <link rel="shortcut icon" href="blah"> -->
     <link rel="stylesheet" href="css/styles.css">
 
     <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
     <script type="text/javascript" src="js/jquery.min.js"></script>
   </head>
-  <body>
+  <body id="skrollr-body">
+
+
       <section id="section-intro" class="wrapper" data-460="opacity:1" data-750="opacity:0">
         <div class="white-bg"></div>
         <div class="width-wrapper">
@@ -76,6 +83,30 @@
             <h2 class="project-number" data-600="opacity:0.2;margin-top:-380px" data-950="opacity:1;margin-top:-135px;">01</h2>
 
             <div class="project-img">
+
+<!--           <div class="boo">
+                <div class="grid__item" data-size="1280x853">
+                    <a href="3.jpg" class="img-wrap"><img src="3.jpg" class="project-img-3"data-800="margin-top:-170px; opacity: 0.05" data-950="margin-top:-110px;opacity: 1" alt="img01" />
+                        <div class="description description--grid">Assemblage</div>
+                    </a>
+                </div>
+                <div class="grid__item" data-size="958x1280">
+                    <a href="4.png" class="img-wrap"><img src="4.png"  class="project-img-4" data-840="margin-top:300px; opacity: 0.1" data-1030="margin-top:180px;opacity: 1" alt="img02" />
+                        <div class="description description--grid">Demesne</div>
+                    </a>
+                </div>
+                <div class="grid__item" data-size="837x1280">
+                    <a href="5.png" class="img-wrap"><img src="5.png" class="project-img-5" data-820="margin-left:267px; opacity: 0.1" data-990="margin-left:217px; opacity: 1" alt="img03" />
+                        <div class="description description--grid">Felicity</div>
+                    </a>
+                </div>
+            </div>
+            <div class="preview">
+                <button class="action action--close"><i class="fa fa-times"></i><span class="text-hidden">Close</span></button>
+                <div class="description description--preview"></div>
+            </div> -->
+
+
                 <img src="3.jpg" class="project-img-3"data-800="margin-top:-170px; opacity: 0.05" data-950="margin-top:-110px;opacity: 1">
                 <img src="4.png" class="project-img-4" data-840="margin-top:300px; opacity: 0.1" data-1030="margin-top:180px;opacity: 1">
                 <img src="5.png" class="project-img-5" data-820="margin-left:267px; opacity: 0.1" data-990="margin-left:217px; opacity: 1">
@@ -150,6 +181,7 @@
         </div>
         <div class="clearfix"></div>
       </section>
+
       <footer>
         <div id="footer-width-wrapper" data-3880="opacity:0" data-4010="opacity:1">
               <div class="footer-divider"></div>
@@ -211,4 +243,71 @@
                 l.fadeTo('medium',1);
             });
         </script>
+
+        <script src="js/imagesloaded.pkgd.min.js"></script>
+    <script src="js/masonry.pkgd.min.js"></script>
+    <script src="js/classie.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        (function() {
+            var support = { transitions: Modernizr.csstransitions },
+                // transition end event name
+                transEndEventNames = { 'WebkitTransition': 'webkitTransitionEnd', 'MozTransition': 'transitionend', 'OTransition': 'oTransitionEnd', 'msTransition': 'MSTransitionEnd', 'transition': 'transitionend' },
+                transEndEventName = transEndEventNames[ Modernizr.prefixed( 'transition' ) ],
+                onEndTransition = function( el, callback ) {
+                    var onEndCallbackFn = function( ev ) {
+                        if( support.transitions ) {
+                            if( ev.target != this ) return;
+                            this.removeEventListener( transEndEventName, onEndCallbackFn );
+                        }
+                        if( callback && typeof callback === 'function' ) { callback.call(this); }
+                    };
+                    if( support.transitions ) {
+                        el.addEventListener( transEndEventName, onEndCallbackFn );
+                    }
+                    else {
+                        onEndCallbackFn();
+                    }
+                };
+
+            new GridFx(document.querySelector('.boo'), {
+                imgPosition : {
+                    x : 3,
+                    y : 0.75
+                },
+                pagemargin : 50,
+                onOpenItem : function(instance, item) {
+                    instance.items.forEach(function(el) {
+                        if(item != el) {
+                            var delay = Math.floor(Math.random() * 150);
+                            el.style.WebkitTransition = 'opacity .4s ' + delay + 'ms cubic-bezier(.7,0,.3,1), -webkit-transform .4s ' + delay + 'ms cubic-bezier(.7,0,.3,1)';
+                            el.style.transition = 'opacity .4s ' + delay + 'ms cubic-bezier(.7,0,.3,1), transform .4s ' + delay + 'ms cubic-bezier(.7,0,.3,1)';
+                            
+                            el.style.WebkitTransform = 'translate3d(0,400px,0)';
+                            el.style.transform = 'translate3d(0,400px,0)';
+                            el.style.opacity = 0;
+                        }
+                    });
+                },
+                onCloseItem : function(instance, item) {
+                    instance.items.forEach(function(el) {
+                        if(item != el) {
+                            el.style.WebkitTransition = 'opacity .3s, -webkit-transform .3s';
+                            el.style.transition = 'opacity .3s, transform .3s';
+
+                            el.style.WebkitTransform = 'translate3d(0,0,0)';
+                            el.style.transform = 'translate3d(0,0,0)';
+                            el.style.opacity = 1;
+
+                            onEndTransition(el, function() {
+                                el.style.transition = 'none';
+                                el.style.WebkitTransform = 'none';
+                            });
+                        }
+                    });
+                }
+            });
+        })();
+    </script>
+
   </body>
