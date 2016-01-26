@@ -995,11 +995,12 @@ body footer p#footer-note {
     display: none;
   }
   body #section-intro .section-paragraph-1 #intro-title-1 {
-    font-size: 45px;
     padding-top: 50px;
-    padding-bottom: 50px;
+    padding-bottom: 30px;
     letter-spacing: 8px;
-    padding-left: 80px;
+    padding-left: 65px;
+    margin-left: 5px;
+    left: 5px;
   }
   body #section-intro .section-paragraph-2 {
     min-width: 220px;
@@ -1016,9 +1017,10 @@ body footer p#footer-note {
     max-height: 440px;
   }
   body #section-intro #img-bg #intro-bg {
-    width: 85%;
-    margin-top: 150px;
+    width: 90%;
+    margin-top: 140px;
     left: 0;
+    margin-left: -6%;
   }
   body #section-intro #img-bg #solid-bg {
     display: none;
@@ -1051,7 +1053,7 @@ body footer p#footer-note {
   }
   body section#section-project-1 .project-number {
     left: 0;
-    margin-top: -200px;
+    margin-top: -190px;
   }
   body section#section-project-1 .project-img .project-img-3 {
     margin-top: -10px;
