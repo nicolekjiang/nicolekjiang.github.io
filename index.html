@@ -208,12 +208,12 @@
 
 
       <!-- Javascript time -->
-
       <script type="text/javascript" src="js/skrollr.min.js"></script>
         <script type="text/javascript">
-            c = detectmob();
+            var c = detectmob();
             console.log('check is '+ c);
-            if (c==false){
+            var w = $(document).width();
+            if (c==false && w>800){
                 //initialize skrollr
                 var s = skrollr.init({
                 forceHeight:false
@@ -241,7 +241,6 @@
                 });
 
             };
-            
             function detectmob() { 
                  if( navigator.userAgent.match(/Android/i)
                  || navigator.userAgent.match(/webOS/i)
@@ -260,3 +259,4 @@
 
         </script>
   </body>
+</html>

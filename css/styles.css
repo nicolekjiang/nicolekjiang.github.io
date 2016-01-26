@@ -968,13 +968,255 @@ body footer p#footer-note {
   }
   body section#section-project-3 .section-paragraph-1 {
     margin-left: -530px;
-    margin-top: -90px;
+    margin-top: -20px;
   }
   body section#section-project-3 .section-paragraph-1 .project-title-name {
     font-size: 38px;
   }
   body footer #footer-width-wrapper {
     margin-left: 100px;
+  }
+}
+@media (max-width: 800px) {
+  body .width-wrapper {
+    max-width: 800px;
+    width: 90%;
+    margin: 0 auto;
+  }
+  body #section-intro .white-bg {
+    width: 100%;
+    margin-top: 7px;
+  }
+  body #section-intro .section-paragraph-1 {
+    top: 40px;
+    right: 8%;
+  }
+  body #section-intro .section-paragraph-1 #intro-content-1 {
+    display: none;
+  }
+  body #section-intro .section-paragraph-1 #intro-title-1 {
+    font-size: 45px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    letter-spacing: 8px;
+    padding-left: 80px;
+  }
+  body #section-intro .section-paragraph-2 {
+    min-width: 220px;
+    margin-right: 20px;
+  }
+  body #section-intro .section-paragraph-2 #intro-content-2 {
+    color: grey;
+    line-height: 21px;
+    font-size: 14px;
+    margin-left: 0px;
+  }
+  body #section-intro #img-bg {
+    padding-top: 0px;
+    max-height: 440px;
+  }
+  body #section-intro #img-bg #intro-bg {
+    width: 85%;
+    margin-top: 150px;
+    left: 0;
+  }
+  body #section-intro #img-bg #solid-bg {
+    display: none;
+  }
+  body #section-intro #img-bg h3 {
+    display: none;
+  }
+  body .project-extension {
+    display: none;
+  }
+  body section#section-project-0 #project-bg {
+    display: none;
+  }
+  body section#section-project-0 .project-background {
+    border-right: 0px;
+    margin-top: -210px;
+  }
+  body section#section-project-0 .project-background h3 {
+    display: none;
+  }
+  body section#section-project-1 {
+    margin-top: 300px;
+  }
+  body section#section-project-1 .project-background {
+    width: 100%;
+    left: 0px;
+    margin-left: 0;
+    margin-top: -50px;
+  }
+  body section#section-project-1 .project-number {
+    left: 0;
+    margin-top: -200px;
+  }
+  body section#section-project-1 .project-img .project-img-3 {
+    margin-top: -10px;
+    width: 90%;
+    max-width: 600px;
+    margin: 0 auto;
+    left: auto;
+    margin-left: 5%;
+    position: relative;
+  }
+  body section#section-project-1 .project-img .project-img-5,
+  body section#section-project-1 .project-img .project-img-4 {
+    display: none;
+  }
+  body section#section-project-1 .section-paragraph-1 {
+    margin: 0 auto;
+    position: relative;
+    left: auto;
+    text-align: left;
+    width: 60%;
+    float: left;
+    margin-left: 5%;
+    margin-top: 60px;
+  }
+  body section#section-project-1 .section-paragraph-1 .project-title {
+    font-size: 16px;
+  }
+  body section#section-project-1 .section-paragraph-1 .project-title-name {
+    font-size: 40px;
+    text-align: left;
+  }
+  body section#section-project-1 .section-paragraph-1 .project-divider {
+    margin-top: 26px;
+    position: relative;
+  }
+  body section#section-project-1 .section-paragraph-1 .project-content {
+    margin-top: 30px;
+  }
+  body section#section-project-1 .section-paragraph-2 {
+    margin-top: 200px;
+  }
+  body section#section-project-1 .project-date {
+    margin-top: -80px;
+  }
+  body section#section-project-1 .project-cta {
+    margin-left: 5%;
+    float: left;
+    margin-top: 30px;
+    left: 0px;
+    margin-right: 5%;
+    height: 60px;
+    width: 60px;
+    position: relative;
+    clear: left;
+  }
+  body section#section-project-2 {
+    margin-top: 330px;
+  }
+  body section#section-project-2 .project-background {
+    width: 100%;
+    left: 0;
+    margin-left: 0px;
+    max-height: 370px;
+  }
+  body section#section-project-2 .project-img .project-img-6 {
+    width: 90%;
+    margin-left: 5%;
+    position: relative;
+    left: 0;
+    margin-bottom: 20px;
+    margin-top: -30px;
+  }
+  body section#section-project-2 .project-img .project-img-7,
+  body section#section-project-2 .project-img .project-img-8 {
+    display: none;
+  }
+  body section#section-project-2 .section-paragraph-1 {
+    display: block;
+    position: relative;
+    margin-top: 20px;
+    left: 0;
+    width: 60%;
+    margin-left: 5%;
+    float: left;
+  }
+  body section#section-project-2 .section-paragraph-1 .project-title-name {
+    font-size: 40px;
+  }
+  body section#section-project-2 .project-date {
+    margin-top: -70px;
+    right: 0;
+    margin-right: -55px;
+  }
+  body section#section-project-2 .project-cta {
+    margin-left: 5%;
+    float: left;
+    margin-top: 30px;
+    left: 0px;
+    margin-right: 5%;
+    height: 60px;
+    width: 60px;
+    position: relative;
+    clear: left;
+  }
+  body section#section-project-3 {
+    padding-top: 220px;
+    padding-bottom: 0px;
+    margin-bottom: 200px;
+    height: auto;
+    max-height: none;
+  }
+  body section#section-project-3 .project-number {
+    margin-top: -190px;
+    margin-left: 0px;
+  }
+  body section#section-project-3 .project-background {
+    width: 100%;
+    left: auto;
+    margin: 0 auto;
+    margin-top: -60px;
+    height: 80vh;
+    max-height: 430px;
+  }
+  body section#section-project-3 .project-img .project-img-9 {
+    display: block;
+    position: relative;
+    left: auto;
+    width: 60%;
+    margin-left: 0px;
+    margin: 0 auto;
+    max-width: 360px;
+  }
+  body section#section-project-3 .project-img .project-img-10,
+  body section#section-project-3 .project-img .project-img-11 {
+    display: none;
+  }
+  body section#section-project-3 .section-paragraph-1 {
+    margin: 0 auto;
+    position: relative;
+    left: auto;
+    width: 60%;
+    float: left;
+    margin-left: 5%;
+    margin-top: 60px;
+    text-align: left;
+  }
+  body section#section-project-3 .section-paragraph-1 .project-title {
+    padding-left: 0px;
+  }
+  body section#section-project-3 .section-paragraph-1 .project-title-name {
+    text-align: left;
+    font-size: 40px;
+  }
+  body section#section-project-3 .section-paragraph-1 .project-divider {
+    left: 0px;
+  }
+  body section#section-project-3 .project-cta {
+    margin-left: 5%;
+    float: left;
+    margin-top: 30px;
+    left: 0px;
+    margin-right: 5%;
+    height: 60px;
+    width: 60px;
+    position: relative;
+    clear: left;
   }
 }
 .clearfix {
