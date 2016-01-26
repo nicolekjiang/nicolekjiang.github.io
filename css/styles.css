@@ -1005,12 +1005,21 @@ body footer p#footer-note {
   body #section-intro .section-paragraph-2 {
     min-width: 220px;
     margin-right: 20px;
+    text-align: right;
+  }
+  body #section-intro .section-paragraph-2 #intro-title-2 {
+    position: absolute;
   }
   body #section-intro .section-paragraph-2 #intro-content-2 {
+    position: relative;
+    margin-top: 80px;
     color: grey;
     line-height: 21px;
     font-size: 14px;
     margin-left: 0px;
+  }
+  body #section-intro .section-contact {
+    display: none;
   }
   body #section-intro #img-bg {
     padding-top: 0px;
