@@ -41,7 +41,7 @@ body{
 		.intro-gradient;
 		.white-bg{
 			display: block;
-		    width: 34%;
+		    width: 100%;
 		    min-width: 180px;
 		    height: inherit;
 		    max-height: inherit;
@@ -102,7 +102,7 @@ body{
 				font-size: 12px;
 			    letter-spacing: 1.2px;
 			    font-weight: 400;
-			    opacity: 1;
+			    //opacity: 1;
 			    line-height: 21px;
 			    margin-left: 80px;
 			    margin-top: -60px;
@@ -514,8 +514,8 @@ body{
 		}
 		.project-cta{
 			left: 50%;
-		    margin-left: -365px;
-		    margin-top: -219px;
+			margin-left: -745px;
+   			margin-top: -125px;
 		}
 		.project-date{
 			position: absolute;
@@ -523,7 +523,7 @@ body{
 		    width: 250px;
 		    .img-rotate(90deg);
 		    transform-origin: 62%;
-		    top: 0px;
+		    top: -210px;
 		}
 		.project-extension{
 			left: 50%;
@@ -651,6 +651,9 @@ body{
 		    height: 6px;
 		    background: rgba(151, 151, 151, 0.27);
 		    margin: 0px 0px 40px;
+	    }
+	    #footer-contact{
+	    	margin-top: 30px;
 	    }
 	    .extra-margin-70{
 	    	margin-bottom: 70px;
@@ -922,7 +925,7 @@ body{
 			    position: relative;
 			    left: auto;
 			    text-align: left;
-			    width: 60%;
+			    width: 90%;
 			    float: left;
 			    margin-left: 5%;
 			    margin-top: 60px;
@@ -986,7 +989,7 @@ body{
 				position: relative;
 				margin-top: 20px;
 				left: 0;
-				width: 60%;
+				width: 90%;
 				margin-left: 5%;
 				float: left;
 				.project-title-name{
@@ -994,12 +997,13 @@ body{
 				}
 			}
 			.project-date{
-				margin-top: -70px;
+				margin-top: -20px;
 			    right: 0;
-			    margin-right: -55px;
+			    margin-right: -100px;
+			    transform-origin: center right 0px;
 			}
 			.project-cta{
-			    margin-left: 5%;
+			    margin-left: 0px;
 			    float: left;
 			    margin-top: 30px;
 			    left: 0px;
@@ -1050,7 +1054,7 @@ body{
 			    position: relative;
 			    left: auto;
 			    text-align: left;
-			    width: 60%;
+			    width: 90%;
 			    float: left;
 			    margin-left: 5%;
 			    margin-top: 60px;
@@ -1092,6 +1096,57 @@ body{
 		
 	}
 }
+
+.a-tags{
+	display: inline-block;
+    margin-right: 3px;
+    margin-bottom: 6px;
+    color: rgba(134, 134, 134, 0.6);
+    text-decoration: none;
+    background: rgba(128, 128, 128, 0.08);
+    border-radius: 3px;
+    padding: 5px 8px 5px 10px;
+    font-size: 10px;
+    text-transform: uppercase;
+    font-style: normal;
+    letter-spacing: 1px;
+    font-weight: 600;
+	&:hover{
+		color: rgba(134, 134, 134, 0.85);
+		.transition(0.25s);
+	}
+}
+
+.test{
+	#intro-title-1,
+	#solid-bg,
+	#intro-bg,
+	#intro-content-1,
+	#intro-content-2,
+	#intro-contact,
+	#intro-title-2,
+	#project-bg,
+	#section-intro h3
+	{
+		opacity:0;
+	}
+
+ #section-intro .section-paragraph-1 
+	#intro-content-1{
+		margin-top: -10px;
+	}
+	#intro-bg{
+		margin-top: -50px;
+	}
+	#intro-title-2{
+		margin-top: 60px;
+	}
+	#intro-contact{
+		margin-top: -60px;
+	}
+}
+
+
 
 .clearfix{
 	clear: both;

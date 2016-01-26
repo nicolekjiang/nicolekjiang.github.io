@@ -38,9 +38,10 @@
     <link rel="stylesheet" href="css/styles.css">
     <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
     <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.easing.min.js"></script>
   </head>
 
-  <body>
+  <body class="test">
       <section id="section-intro" class="wrapper" data-460="opacity:1" data-750="opacity:0">
         <div class="white-bg"></div>
         <div class="width-wrapper">
@@ -69,7 +70,7 @@
                 I'm seeking for the ways, but first, get lost with me.</p>
             </div>
             <div class="clearfix"></div>
-            <ul class="section-contact">
+            <ul class="section-contact" id="intro-contact">
                 <li><a href="http://www.dribbble.com/nicolekjiang" target="_blank"><img src="dribbble.svg"></a></li>
                 <li><a href="http://www.github.com/nicolekjiang" target="_blank"><img src="github.svg"></a></li>
                 <li><a href="http://www.instagram.com/nicolekjiang" target="_blank"><img src="insta.svg"></a></li>
@@ -113,9 +114,11 @@
                 <div class="project-title-name">Reservoir</div>
                 <div class="project-divider"></div>
                 <div class="project-content">Visualizing Agricultural Water Irration.<br>
-                <br>
-                Data visualization, Dashboard design<br>
-                Location system, Coding!</div>
+                    <br>
+                    <a href="https://dribbble.com/nicolekjiang/tags/visualization" target="_blank" class="a-tags">Data Visualization</a>
+                    <a href="https://dribbble.com/nicolekjiang/tags/dashboard" target="_blank" class="a-tags">Dashboard Design</a> 
+                    <a href="https://dribbble.com/nicolekjiang/tags/location" target="_blank" class="a-tags">Location System</a>
+                </div>
             </div>
             <a href="https://dribbble.com/nicolekjiang/projects/343605-Project-Reservoir" target="_blank"><div class="project-cta" data-920="margin-top:320px; opacity:0.1" data-1070="margin-top:280px; opacity:1"></div></a>
             <div class="project-date">January 2016</div>
@@ -141,7 +144,9 @@
                 <div class="project-content">Discovering rogue trader.<br>
                 Dashboard that helps pinpoint cases of trader oversights.<br>
                 <br>
-                Dashboard design; Information architecture</div>
+
+                <a href="https://dribbble.com/nicolekjiang/tags/dashboard" target="_blank" class="a-tags">Dashboard design</a> 
+                <a href="https://dribbble.com/nicolekjiang/tags/architecture" target="_blank" class="a-tags">Info architecture</a>
             </div>
             <a href="https://dribbble.com/shots/1971409-Alert-management-tile-view" target="_blank"><div class="project-cta" data-2000="opacity:0.1;" data-2190="opacity:1;"></div></a>
             <div class="project-date">April 2015</div>
@@ -166,9 +171,11 @@
                 <div class="project-title-name">MoneyHack</div>
                 <div class="project-divider"></div>
                 <div class="project-content">NFC-based easy payment system<br>
-                <br>
-                Mobile design; Payment system<br>
                 Designed, prototyped, released in 12 hours</div>
+                <br>
+                <a href="https://dribbble.com/nicolekjiang/tags/mobile" target="_blank" class="a-tags">Mobile design</a> 
+                <a href="https://dribbble.com/nicolekjiang/tags/payment" target="_blank" class="a-tags">Payment system</a>
+                <a href="https://dribbble.com/nicolekjiang/tags/hackathon" target="_blank" class="a-tags">Hackathon</a>
             </div>
             <a href="https://dribbble.com/shots/2318553-Home-page-for-personal-finance" target="_blank"><div class="project-cta" data-2900="opacity:0.1;" data-3100="opacity:1;"></div></a>
             <div class="project-date">October 2015</div>
@@ -182,7 +189,7 @@
               <div class="footer-divider"></div>
               <h2>Thanks for visiting.</h2>
               <p class="extra-margin-10">If you enjoyed my work or just want to say hi, don’t be shy. </p>
-              <ul class="section-contact extra-margin-70">
+              <ul class="section-contact extra-margin-70" id="footer-contact">
                 <li><a href="http://www.dribbble.com/nicolekjiang" target="_blank"><img src="dribbble.svg"></a></li>
                 <li><a href="http://www.github.com/nicolekjiang" target="_blank"><img src="github.svg"></a></li>
                 <li><a href="http://www.instagram.com/nicolekjiang" target="_blank"><img src="insta.svg"></a></li>
@@ -210,37 +217,93 @@
       <!-- Javascript time -->
       <script type="text/javascript" src="js/skrollr.min.js"></script>
         <script type="text/javascript">
-            var c = detectmob();
-            console.log('check is '+ c);
-            var w = $(document).width();
-            if (c==false && w>800){
-                //THANKS @Prinzhorn ! Skrollr is pretty BADASS
-                var s = skrollr.init({
-                forceHeight:false
-                });
+            var speed = 1000;
+            $(document).ready(function(){
+                var c = detectmob();
+                var w = $(document).width();
 
-                //dim images
-                var excludeList = [5, 7, 8, 10, 11];
-                $('img').hover(function(){
-                    console.log('hovered');
-                    var str = $(this).attr('class');
-                    str = str.replace('project-img-', '');
-                    str = str.replace('skrollable-after', '');
-                    str = str.replace('skrollable-between', '');
-                    str = str.replace('skrollable', '');
-                    m = excludeList.indexOf(parseInt(str));
-                    if ( m < 0){
 
-                        var l = $(this).parent().find('img').not(this).not($('.project-img-8')); 
-                        l.fadeTo('fast',0.25);
+                if (c==false && w>800){
+                  $(".white-bg").animate({width:"34%"},{duration:800},{easing:"easeOutSine"});
+                  setTimeout(
+                    function() 
+                    {$('#intro-title-1').fadeTo(1500,1);
+                  }, 700);
+                  setTimeout(
+                    function() 
+                    {$('#intro-bg').animate({
+                        opacity:1,
+                        //'margin-top': "-60px"
+                      }, {
+                        duration: 2500
+                      });
+                    }, 600);
+                  
+                  setTimeout(
+                    function() 
+                    {
+                      //$('#intro-content-1').fadeTo(speed,1);
+                      $('#solid-bg').fadeTo(speed,1);
+                      $('body #section-intro h3').fadeTo(speed,1);
+                      $('#intro-content-2').fadeTo(speed,1);
+                      $('#project-bg').fadeTo(speed,1);
 
-                    }
-                }, function(){
-                    var l = $(this).parent().find('img').not(this).not($('.project-img-8'));
-                    l.fadeTo('medium',1);
-                });
+                      $('#intro-content-1').animate({
+                        opacity:1,
+                        'margin-top': "-60px"
+                      }, {
+                        duration: 800
+                      });
 
-            };
+                      $('#intro-title-2').animate({
+                        opacity:1,
+                        'margin-top': "10px"
+                      }, {
+                        duration: 800
+                      });
+                      
+                      $('#intro-contact').animate({
+                        opacity:1,
+                        'margin-top': "-10px"
+                      }, {
+                        duration: 800
+                      });
+
+                    }, 2000);
+
+
+
+                    //THANKS @Prinzhorn ! Skrollr is pretty BADASS
+                    var s = skrollr.init({
+                        forceHeight: false
+                    });
+
+                    //dim images
+                    var excludeList = [5, 7, 8, 10, 11];
+                    $('img').hover(function(){
+                        console.log('hovered');
+                        var str = $(this).attr('class');
+                        str = str.replace('project-img-', '');
+                        str = str.replace('skrollable-after', '');
+                        str = str.replace('skrollable-between', '');
+                        str = str.replace('skrollable', '');
+                        m = excludeList.indexOf(parseInt(str));
+                        if ( m < 0){
+
+                            var l = $(this).parent().find('img').not(this).not($('.project-img-8')); 
+                            l.fadeTo('fast',0.25);
+
+                        }
+                    }, function(){
+                        var l = $(this).parent().find('img').not(this).not($('.project-img-8'));
+                        l.fadeTo('medium',1);
+                    });
+
+                }else{
+                  $('body').removeClass('test');
+                };
+
+            });
             //source: http://detectmobilebrowsers.com/
             function detectmob() { 
                  if( navigator.userAgent.match(/Android/i)

@@ -200,7 +200,7 @@ body #section-intro {
 }
 body #section-intro .white-bg {
   display: block;
-  width: 34%;
+  width: 100%;
   min-width: 180px;
   height: inherit;
   max-height: inherit;
@@ -262,7 +262,6 @@ body #section-intro .section-paragraph-1 #intro-content-1 {
   font-size: 12px;
   letter-spacing: 1.2px;
   font-weight: 400;
-  opacity: 1;
   line-height: 21px;
   margin-left: 80px;
   margin-top: -60px;
@@ -686,8 +685,8 @@ body section#section-project-2 .section-paragraph-1 .project-divider {
 }
 body section#section-project-2 .project-cta {
   left: 50%;
-  margin-left: -365px;
-  margin-top: -219px;
+  margin-left: -745px;
+  margin-top: -125px;
 }
 body section#section-project-2 .project-date {
   position: absolute;
@@ -699,7 +698,7 @@ body section#section-project-2 .project-date {
   -o-transform: rotate(90deg);
   -ms-transform: rotate(90deg);
   transform-origin: 62%;
-  top: 0px;
+  top: -210px;
 }
 body section#section-project-2 .project-extension {
   left: 50%;
@@ -826,6 +825,9 @@ body footer .footer-divider {
   height: 6px;
   background: rgba(151, 151, 151, 0.27);
   margin: 0px 0px 40px;
+}
+body footer #footer-contact {
+  margin-top: 30px;
 }
 body footer .extra-margin-70 {
   margin-bottom: 70px;
@@ -1083,7 +1085,7 @@ body footer p#footer-note {
     position: relative;
     left: auto;
     text-align: left;
-    width: 60%;
+    width: 90%;
     float: left;
     margin-left: 5%;
     margin-top: 60px;
@@ -1145,7 +1147,7 @@ body footer p#footer-note {
     position: relative;
     margin-top: 20px;
     left: 0;
-    width: 60%;
+    width: 90%;
     margin-left: 5%;
     float: left;
   }
@@ -1153,12 +1155,13 @@ body footer p#footer-note {
     font-size: 40px;
   }
   body section#section-project-2 .project-date {
-    margin-top: -70px;
+    margin-top: -20px;
     right: 0;
-    margin-right: -55px;
+    margin-right: -100px;
+    transform-origin: center right 0px;
   }
   body section#section-project-2 .project-cta {
-    margin-left: 5%;
+    margin-left: 0px;
     float: left;
     margin-top: 30px;
     left: 0px;
@@ -1204,7 +1207,7 @@ body footer p#footer-note {
     margin: 0 auto;
     position: relative;
     left: auto;
-    width: 60%;
+    width: 90%;
     float: left;
     margin-left: 5%;
     margin-top: 60px;
@@ -1239,6 +1242,52 @@ body footer p#footer-note {
   body footer ul li {
     margin-top: 5px;
   }
+}
+.a-tags {
+  display: inline-block;
+  margin-right: 3px;
+  margin-bottom: 6px;
+  color: rgba(134, 134, 134, 0.6);
+  text-decoration: none;
+  background: rgba(128, 128, 128, 0.08);
+  border-radius: 3px;
+  padding: 5px 8px 5px 10px;
+  font-size: 10px;
+  text-transform: uppercase;
+  font-style: normal;
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+.a-tags:hover {
+  color: rgba(134, 134, 134, 0.85);
+  -webkit-transition: all 0.25s ease 0s;
+  -moz-transition: all 0.25s ease 0s;
+  -o-transition: all 0.25s ease 0s;
+  -ms-transition: all 0.25s ease 0s;
+  transition: all 0.25s ease 0s;
+}
+.test #intro-title-1,
+.test #solid-bg,
+.test #intro-bg,
+.test #intro-content-1,
+.test #intro-content-2,
+.test #intro-contact,
+.test #intro-title-2,
+.test #project-bg,
+.test #section-intro h3 {
+  opacity: 0;
+}
+.test #section-intro .section-paragraph-1 #intro-content-1 {
+  margin-top: -10px;
+}
+.test #intro-bg {
+  margin-top: -50px;
+}
+.test #intro-title-2 {
+  margin-top: 60px;
+}
+.test #intro-contact {
+  margin-top: -60px;
 }
 .clearfix {
   clear: both;
