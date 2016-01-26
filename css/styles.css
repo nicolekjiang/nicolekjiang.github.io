@@ -987,8 +987,10 @@ body footer p#footer-note {
     margin: 0 auto;
   }
   body #section-intro .white-bg {
-    width: 100%;
     margin-top: 7px;
+  }
+  body #section-intro #white-bg-slide {
+    width: 100%;
   }
   body #section-intro .section-paragraph-1 {
     top: 40px;
@@ -1157,7 +1159,7 @@ body footer p#footer-note {
   body section#section-project-2 .project-date {
     margin-top: -20px;
     right: 0;
-    margin-right: -100px;
+    margin-right: 0px;
     transform-origin: center right 0px;
   }
   body section#section-project-2 .project-cta {

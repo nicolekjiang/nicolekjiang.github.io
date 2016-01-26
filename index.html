@@ -1,4 +1,4 @@
-<html lang="en">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
   <head>
 
   <!-- The numbers  -->
@@ -43,7 +43,7 @@
 
   <body class="test">
       <section id="section-intro" class="wrapper" data-460="opacity:1" data-750="opacity:0">
-        <div class="white-bg"></div>
+        <div class="white-bg" id="white-bg-slide"></div>
         <div class="width-wrapper">
             <div id="img-bg" data--10="padding-top:200px; opacity: 1" data-450="padding-top:120px; opacity: 0.05">
                 <img src="1.png" id="intro-bg">
@@ -224,7 +224,27 @@
 
 
                 if (c==false && w>800){
-                  $(".white-bg").animate({width:"34%"},{duration:800},{easing:"easeOutSine"});
+
+                  var width = 110;
+                  var count = 0;
+
+                  function widthF() {
+                    count += 1;
+                    width -= 1.5 - count/200;
+                    widthSize = width + '%';
+                    $('#white-bg-slide').css('width',widthSize);
+
+                    if (width > 35) {
+                      window.requestAnimationFrame(widthF);
+                    }
+                  }
+
+                  window.requestAnimationFrame(widthF);
+
+
+
+
+                  //$(".white-bg").animate({width:"34%"},{duration:800},{easing:"easeOutSine"});
                   setTimeout(
                     function() 
                     {$('#intro-title-1').fadeTo(1500,1);
