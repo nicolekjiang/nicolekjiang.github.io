@@ -249,7 +249,7 @@ body #section-intro .section-paragraph-1 h1 {
   font-size: 46px;
   margin-top: 8px;
   margin-bottom: 90px;
-  background: transparent url('../0.png') left center no-repeat;
+  background: transparent url('../img/0.png') left center no-repeat;
   margin-left: -10px;
   background-size: contain;
   vertical-align: bottom;
@@ -423,13 +423,13 @@ body section.section-project .project-cta {
   position: absolute;
   height: 90px;
   width: 90px;
-  background: rgba(75, 62, 247, 0.9) url('../arrow.svg') center center no-repeat;
+  background: rgba(75, 62, 247, 0.9) url('../img/arrow.svg') center center no-repeat;
   background-size: 23px 23px;
   z-index: 80;
   cursor: pointer;
 }
 body section.section-project .project-cta:hover {
-  background: #4b3ef7 url('../arrow.svg') center center no-repeat;
+  background: #4b3ef7 url('../img/arrow.svg') center center no-repeat;
   background-size: 23px 23px;
   -webkit-transition: all 0.5s ease 0s;
   -moz-transition: all 0.5s ease 0s;
@@ -686,7 +686,7 @@ body section#section-project-2 .section-paragraph-1 .project-divider {
 body section#section-project-2 .project-cta {
   left: 50%;
   margin-left: -745px;
-  margin-top: -125px;
+  margin-top: -129px;
 }
 body section#section-project-2 .project-date {
   position: absolute;
