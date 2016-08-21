@@ -1,5 +1,6 @@
 //imports
 @import "reset.less";
+@import "button.less";
 @import url('https://fonts.googleapis.com/css?family=Crimson+Text:400,600,700|Open+Sans:300,400,600,700');
 
 //styling 
@@ -12,6 +13,8 @@
 @font: #51504F;
 @grey: rgba(0, 0, 0, 0.5);
 @grey25: rgba(0, 0, 0, 0.15);
+@grey7: rgba(0, 0, 0, 0.7);
+@grey9: rgba(0, 0, 0, 0.9);
 
 h1{
 	font-family: 'Crimson Text', serif;
@@ -25,6 +28,12 @@ p{
 	margin-bottom: 10px;
 	letter-spacing: 0.3px;
 	color: @font;
+}
+h2{
+	font-family: 'Crimson Text', serif;
+	font-size: 30px;
+	line-height: 30px;
+	letter-spacing: 0.7px;
 }
 h3{
 	font-family: 'Open Sans', sans-serif;	
@@ -49,6 +58,11 @@ button{
 	font-weight: 600;
 	letter-spacing: 0.5px;
 	margin-right: 10px;
+}
+
+a{
+	color: #487CDB;
+	font-weight: bold;
 }
 
 .left{
@@ -83,45 +97,74 @@ button{
 	margin-bottom: 50px;
 }
 
-.fb-login{
-	display: inline-block;
-	color: white;
-	margin-top: 5px;
-	background: @fb;
-    background-size: 12px 24px;
-	width: 168px;
-	height: 50px;
-	.border-radius(0px, 18px, 18px, 18px, @fb, 0px);
-	.box-shadow(0px, 2px, 8px, 0px, 0.10);	
-	span{
-		margin-left: 16px;
-		vertical-align: top;
-	}
-	img{
-		margin-left: -12px;
-	}
-}//fb-login
+form {
+  box-sizing: border-box;
+  margin: 40px auto 0;
+  padding-bottom: 40px;
+  border-radius: 3px;
+}
+form h1 {
+  box-sizing: border-box;
+  padding: 20px;
+}
+label{
+	font-family: 'Open Sans', sans-serif;	
+	color: @grey9;
+	font-size: 16px;
+	font-weight:400;
+	text-transform: none; 
+	display: block;
+}
+label.secondary{
+	color: @grey7;
+	font-size: 14px;
+}
+input {
+  margin: 40px 0px;
+  width: 400px;
+  display: block;
+  border: none;
+  padding: 10px 0;
+  border-bottom: solid 1px @bronze;
+  -webkit-transition: all 0.3s cubic-bezier(0.64, 0.09, 0.08, 1);
+  transition: all 0.3s cubic-bezier(0.64, 0.09, 0.08, 1);
+  background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 96%, @bronze 4%);
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 96%, @bronze 4%);
+  background-position: -400px 0;
+  background-size: 400px 100%;
+  background-repeat: no-repeat;
+  color: @grey;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 2.4px;
+  font-family: 'Open Sans', sans-serif;
+}
+input:focus, input:valid {
+  box-shadow: none;
+  outline: none;
+  background-position: 0 0;
+}
+input:focus::-webkit-input-placeholder, input:valid::-webkit-input-placeholder {
+  color: @bronze;
+  font-size: 11px;
+  -webkit-transform: translateY(-20px);
+          transform: translateY(-20px);
+  visibility: visible !important;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+  border-radius: 3px;
+  padding: 6px;
+  margin-left: 0px;
+  width: 220px;
+  color: white;
+
+}
 
 
-.li-login{
-	display: inline-block;
-	color: white;
-    background-size: 12px 24px;
-    //background: @li url('../img/li.svg') no-repeat 20px center;
-	background: @li;
-	width: 168px;
-	height: 50px;
-	margin-top: 5px;
-	.border-radius(18px, 18px, 18px, 0px, @li, 0px);
-	.box-shadow(0px, 2px, 8px, 0px, 0.10);
-	span{
-		margin-left: 16px;
-		vertical-align: top;
-	}
-	img{
-		margin-left: -10px;
-	}
-}//li-login
 
 .top-bar{
 	display: block;
@@ -267,32 +310,7 @@ button{
 			}
 		}
 	}//landing
-	button{
-		margin-right: 0px;
-	}
-	.fb-login{
-		margin-right: 5px;
-		width: 150px;
-		background: #4f83d8;
-		//background: #4f83d8 url('../img/fb.svg') no-repeat 17px center;
-		span{
-			margin-left: 15px;
-		}
-		img{
-			margin-left: -6px;
-		}
-	}
-	.li-login{
-		width: 150px;
-		//background: #46abda url('../img/li.svg') no-repeat 16px center;
-		background: #46abda;
-		span{
-			margin-left: 10px;
-		}
-		img{
-			margin-left: 0px;
-		}
-	}
+
 	.divider{
 	    margin-top: 10px;
     	margin-bottom: 30px;
@@ -322,12 +340,8 @@ button{
 		.user-message{
 			margin-right: 60px;
 		}
-		.hidden-message{
-			display: none;
-		}
 	}
 }
-
 
 @media(min-height: 1000px) and (min-width: 1200px){
 	.landing{
@@ -339,69 +353,3 @@ button{
 
 
 
-
-
-//button animation
-
-.button {
-	float: left;
-	display: block;
-	color: inherit;
-	vertical-align: middle;
-	position: relative;
-	z-index: 1;
-	-webkit-backface-visibility: hidden;
-	-moz-osx-font-smoothing: grayscale;
-}
-
-
-.button.button--aylen {
-	color: white;
-	overflow: hidden;
-	-webkit-transition: color 0.3s;
-	transition: color 0.3s;
-}
-
-.button--aylen.button--inverted {
-	background: none;
-	color: #fff;
-}
-.button--aylen::before,
-.button--aylen::after {
-	content: '';
-	position: absolute;
-	height: 100%;
-	width: 100%;
-	bottom: 100%;
-	left: 0;
-	z-index: -1;
-	-webkit-transition: -webkit-transform 0.3s;
-	transition: transform 0.3s;
-	-webkit-transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
-	transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
-}
-.fb-login.button--aylen::before {
-	background: #6E9CE8;
-}
-.fb-login.button--aylen::after {
-	background: #436BAC;
-}
-
-.li-login.button--aylen::before {
-	background: #66BEE7;
-}
-.li-login.button--aylen::after {
-	background: #4592B6;
-}
-.button--aylen:hover {
-	color: #fff;
-}
-.button--aylen:hover::before,
-.button--aylen:hover::after {
-	-webkit-transform: translate3d(0, 100%, 0);
-	transform: translate3d(0, 100%, 0);
-}
-.button--aylen:hover::after {
-	-webkit-transition-delay: 0.175s;
-	transition-delay: 0.175s;
-}
