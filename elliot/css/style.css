@@ -324,6 +324,7 @@ button {
 a {
   color: #487CDB;
   font-weight: bold;
+  font-family: 'Open Sans', sans-serif;
 }
 .left {
   float: left;
