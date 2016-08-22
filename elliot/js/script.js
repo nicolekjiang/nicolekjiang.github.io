@@ -14,8 +14,14 @@ $(document).ready(function(){
 	 			opacity: 1
 	 		}, 'medium');
 	 	};
-	 	
-	 	
+ 	});
+
+ 	$('.add-email').on('click', function(){
+ 		console.log('hello');
+ 		$(".email-invite-form").append(
+ 			'<input placeholder="Email Address" type="text" required="">'
+ 		);
+
  	});
  	
  });
