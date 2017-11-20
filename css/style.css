@@ -61,19 +61,19 @@ a {
 @-webkit-keyframes colorchange {
   /* Safari and Chrome - necessary duplicate */
   0% {
-    background: red;
+    background: #020124;
   }
   25% {
-    background: yellow;
+    background: #48007F;
   }
   50% {
-    background: blue;
+    background: #6634BA;
   }
   75% {
-    background: green;
+    background: #2F2D45;
   }
   100% {
-    background: red;
+    background: #020124;
   }
 }
 .clear {

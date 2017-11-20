@@ -9,6 +9,54 @@
 	],
 "creatorBuild": "25849",
 "files": {
+	"\/.sass-cache\/d59fcf3d4986428802a5e958856826b5c7e7a9b9\/_base.scssc": {
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/.sass-cache\/d59fcf3d4986428802a5e958856826b5c7e7a9b9\/_base.scssc",
+		"oF": 0
+		},
+	"\/.sass-cache\/d59fcf3d4986428802a5e958856826b5c7e7a9b9\/_layout.scssc": {
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/.sass-cache\/d59fcf3d4986428802a5e958856826b5c7e7a9b9\/_layout.scssc",
+		"oF": 0
+		},
+	"\/.sass-cache\/d59fcf3d4986428802a5e958856826b5c7e7a9b9\/_syntax-highlighting.scssc": {
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/.sass-cache\/d59fcf3d4986428802a5e958856826b5c7e7a9b9\/_syntax-highlighting.scssc",
+		"oF": 0
+		},
+	"\/case\/cap401-study.pdf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/case\/cap401-study.pdf",
+		"oF": 0
+		},
+	"\/case\/hnl.pdf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/case\/hnl.pdf",
+		"oF": 0
+		},
+	"\/case\/lotus.pdf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/case\/lotus.pdf",
+		"oF": 0
+		},
+	"\/case\/nex.pdf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/case\/nex.pdf",
+		"oF": 0
+		},
+	"\/case\/pm.pdf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/case\/pm.pdf",
+		"oF": 0
+		},
 	"\/css\/reset.css": {
 		"aP": 1,
 		"bl": 0,
@@ -75,6 +123,236 @@
 		"sM": 0,
 		"sU": 0
 		},
+	"\/elliot\/css\/button.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/elliot\/css\/button-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/elliot\/css\/button.less": {
+		"aP": 0,
+		"bl": 0,
+		"dJ": 0,
+		"ft": 1,
+		"ie": 1,
+		"iI": 0,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/elliot\/css\/button.css",
+		"oF": 0,
+		"oS": 0,
+		"rU": 0,
+		"sI": 0,
+		"sM": 0,
+		"sU": 0
+		},
+	"\/elliot\/css\/invite.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/elliot\/css\/invite-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/elliot\/css\/invite.less": {
+		"aP": 0,
+		"bl": 0,
+		"dJ": 0,
+		"ft": 1,
+		"ie": 1,
+		"iI": 0,
+		"ma": 1,
+		"oA": 0,
+		"oAP": "\/elliot\/css\/invite.css",
+		"oF": 0,
+		"oS": 0,
+		"rU": 0,
+		"sI": 0,
+		"sM": 0,
+		"sU": 0
+		},
+	"\/elliot\/css\/reset.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/elliot\/css\/reset-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/elliot\/css\/reset.less": {
+		"aP": 0,
+		"bl": 0,
+		"dJ": 0,
+		"ft": 1,
+		"ie": 1,
+		"iI": 0,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/elliot\/css\/reset.css",
+		"oF": 0,
+		"oS": 0,
+		"rU": 0,
+		"sI": 0,
+		"sM": 0,
+		"sU": 0
+		},
+	"\/elliot\/css\/signup.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/elliot\/css\/signup-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/elliot\/css\/signup.less": {
+		"aP": 0,
+		"bl": 0,
+		"dJ": 0,
+		"ft": 1,
+		"ie": 1,
+		"iI": 0,
+		"ma": 1,
+		"oA": 0,
+		"oAP": "\/elliot\/css\/signup.css",
+		"oF": 0,
+		"oS": 0,
+		"rU": 0,
+		"sI": 0,
+		"sM": 0,
+		"sU": 0
+		},
+	"\/elliot\/css\/style.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/elliot\/css\/style-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/elliot\/css\/style.less": {
+		"aP": 0,
+		"bl": 0,
+		"dJ": 0,
+		"ft": 1,
+		"ie": 1,
+		"iI": 0,
+		"ma": 1,
+		"oA": 0,
+		"oAP": "\/elliot\/css\/style.css",
+		"oF": 0,
+		"oS": 0,
+		"rU": 0,
+		"sI": 0,
+		"sM": 0,
+		"sU": 0
+		},
+	"\/elliot\/img\/add-email.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/elliot\/img\/add-email.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/elliot\/img\/fb.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/elliot\/img\/fb.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/elliot\/img\/google.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/elliot\/img\/google.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/elliot\/img\/li.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/elliot\/img\/li.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/elliot\/img\/user-profile.jpg": {
+		"ft": 16384,
+		"iS": 20934,
+		"oA": 0,
+		"oAP": "\/elliot\/img\/user-profile.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/elliot\/index.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/elliot\/index.html",
+		"oF": 0
+		},
+	"\/elliot\/invite.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/elliot\/invite.html",
+		"oF": 0
+		},
+	"\/elliot\/js\/jquery.min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/elliot\/js\/jquery.min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/elliot\/js\/script.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/elliot\/js\/script-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/elliot\/js\/skrollr.min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/elliot\/js\/skrollr.min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/elliot\/signup.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/elliot\/signup.html",
+		"oF": 0
+		},
 	"\/img\/blob-bg.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -122,6 +400,194 @@
 		"oAP": "\/index.html",
 		"oF": 0
 		},
+	"\/insights\/app-min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/insights\/app-min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/insights\/app.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/insights\/app-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/insights\/css\/style.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/insights\/css\/style-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/insights\/css\/style.css.map": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/insights\/css\/style.css.map",
+		"oF": 0
+		},
+	"\/insights\/css\/style.less": {
+		"aP": 0,
+		"bl": 0,
+		"dJ": 0,
+		"ft": 1,
+		"ie": 1,
+		"iI": 0,
+		"ma": 1,
+		"oA": 0,
+		"oAP": "\/insights\/css\/style.css",
+		"oF": 0,
+		"oS": 0,
+		"rU": 0,
+		"sI": 0,
+		"sM": 0,
+		"sU": 0
+		},
+	"\/insights\/img\/caret-down-blue.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/insights\/img\/caret-down-blue.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/insights\/img\/caret-down.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/insights\/img\/caret-down.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/insights\/img\/caret-right-blue.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/insights\/img\/caret-right-blue.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/insights\/img\/ellipsis.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/insights\/img\/ellipsis.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/insights\/img\/event-blue.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/insights\/img\/event-blue.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/insights\/img\/event.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/insights\/img\/event.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/insights\/img\/navheader.png": {
+		"ft": 32768,
+		"iS": 90925,
+		"oA": 0,
+		"oAP": "\/insights\/img\/navheader.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/insights\/img\/plus-large-thin.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/insights\/img\/plus-large-thin.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/insights\/img\/search.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/insights\/img\/search.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/insights\/img\/type-number-blue.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/insights\/img\/type-number-blue.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/insights\/img\/type-number.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/insights\/img\/type-number.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/insights\/img\/viz.png": {
+		"ft": 32768,
+		"iS": 20073,
+		"oA": 0,
+		"oAP": "\/insights\/img\/viz.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/insights\/index.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/insights\/index.html",
+		"oF": 0
+		},
+	"\/insights\/js\/jquery.min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/insights\/js\/jquery.min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
 	"\/js\/imagesloaded.pkgd.min.js": {
 		"ft": 64,
 		"mi": 1,
@@ -148,6 +614,12 @@
 		"oF": 0,
 		"sC": 1,
 		"tS": 0
+		},
+	"\/nkj-resume.pdf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/nkj-resume.pdf",
+		"oF": 0
 		}
 	},
 "hooks": [
@@ -156,7 +628,7 @@
 	},
 "projectAttributes": {
 	"creationDate": 532818295,
-	"displayValue": "landing",
+	"displayValue": "nicolekjiang.github.io",
 	"displayValueWasSetByUser": 0,
 	"iconImageName": "meme-obama"
 	},
