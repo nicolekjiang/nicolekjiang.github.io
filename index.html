@@ -1,320 +1,139 @@
 <!DOCTYPE html>
-<html>
-  <head>
-  <!-- The numbers  -->
-  <!-- 
-  I genrally re-do my website about every half year. 
-  This year's numbers are the following: 
-    Coding days: 4 
-    Design days 2
-    Late nights: 1
-    Take-out dinners: 0
-    Spectre by Radiohead looped: 983
-    Gums chewed: 3.5 packs 
-    Commits to fix pixel errors: too many
-  -->
-    <title>NKJ</title>
-    <!-- very meta -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Nicole Jiang - Full-stack Designer">
-    <meta name="author" content="Nicole Jiang">
+<html lang="en" class="no-js">
 
-    <meta name="og:image" content="http://nicolejiang.com/1.png">
-    <meta name="og:title" content="By Nicole Jiang">
-    <meta name="og:description" content="Full-stack designer with a fine taste in wine">
-    <meta name="og:url" content="http://www.nicolejiang.com">
+    <head>
+        <title>NKJ</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Nicole Jiang - Designer">
+        <meta name="author" content="Nicole Jiang">
 
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:image" content="http://nicolekjiang.github.io/1.png">
-    <meta name="twitter:title" content="By Nicole Jiang">
-    <meta name="twitter:description" content="Full-stack designer with a fine taste in wine">
-    <meta name="twitter:creator" content="@nicolekjiang">
-    <meta name="twitter:url" content="http://www.nicolejiang.com">
+        <meta name="og:image" content="http://nicolejiang.com/1.png">
+        <meta name="og:title" content="By Nicole Jiang">
+        <meta name="og:description" content="Full-stack designer with a fine taste in wine">
+        <meta name="og:url" content="http://www.nicolejiang.com">
 
-    <!-- css and js and all -->
-    <link rel="shortcut icon" href="img/anchor.png">
-    <link rel="stylesheet" href="css/styles.css">
-    <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
-    <script type="text/javascript" src="js/jquery.min.js"></script>
-    <script type="text/javascript" src="js/jquery.easing.min.js"></script>
-  </head>
-  <body class="test">
-      <section id="section-intro" class="wrapper" data-460="opacity:1" data-750="opacity:0">
-        <div class="white-bg" id="white-bg-slide"></div>
-        <div class="width-wrapper">
-            <div id="img-bg" data--10="padding-top:200px; opacity: 1" data-450="padding-top:120px; opacity: 0.05">
-                <img src="img/1.png" id="intro-bg">
-                <div id="solid-bg"></div>
-                <h3>DESIGNED & CODED IN 2016</h3>
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:image" content="http://nicolekjiang.github.io/1.png">
+        <meta name="twitter:title" content="By Nicole Jiang">
+        <meta name="twitter:description" content="Full-stack designer with a fine taste in wine">
+        <meta name="twitter:creator" content="@nicolekjiang">
+        <meta name="twitter:url" content="http://www.nicolejiang.com">
+
+        <!-- css and js and all -->
+        <!-- <link rel="shortcut icon" href="img/anchor.png"> -->
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/reset.css">
+        <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i,900,900i" rel="stylesheet">
+        <link  type="text/css" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+        <link type="text/css" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,600,700" rel="stylesheet">
+
+
+
+        <!-- <script type="text/javascript" src="js/jquery.easing.min.js"></script> -->
+                <script>
+            document.documentElement.className = 'js';
+            var supportsCssVars = function() {
+                var s = document.createElement('style'),
+                support;
+
+                s.innerHTML = "root: { --tmp-var: bold; }";
+                document.head.appendChild(s);
+                support = !!(window.CSS && window.CSS.supports && window.CSS.supports('font-weight', 'var(--tmp-var)'));
+                s.parentNode.removeChild(s);
+                return support;
+            }
+            if (!supportsCssVars()) alert('Please view this demo in a modern browser that supports CSS Variables.')
+        </script>
+
+    </head>
+    <body>
+        <div class="container">
+            <div class="main">
+                <div class='wrapper'>
+                    <div class="date">
+                        <div class='line1'></div>
+                        <h5>2017</h5>
+                        <div class='line2'></div>
+                    </div>
+                    <div class="mixture" id="scene" data-hover-only='false' > 
+                        
+                        <div data-depth="0.2" class='description'> 
+                            <div  class="position-wrapper">
+                                <h1>nkj</h1>
+                                <h4 class="slogan">Product designer at <span id="mixpanel">Mixpanel</span></h4>
+                            </div>
+                        </div>
+                        <div data-depth="-0.4" class="color-blob"></div>
+                        <div data-depth="1" data-friction-x='1' data-friction-y='0.075' class="topo"></div>
+                        <div data-depth="0.7" data-calibrate-x='1000'  class="cloud"></div>
+                        <div class="clear"></div>
+
+                    </div>
+                    </div>
+               
             </div>
-            <div class="section-paragraph-1" data-0="top:135px; opacity: 1" data-380="top:300px; opacity: 0">
-                <h1 id="intro-title-1"> Between</h1>
-                <div id="intro-content-1">
-                    <div class="intro-divider"></div>
-                    Hi, <br>
-                    My name is Nicole.<br>
-                    I’d like to think I'm a full-stack designer with a fine taste in wine. 
+            <div class="contact">
+                <div class="links">
+                    <div class='line1'></div>
+                        <h5>LINKS</h5>
+                    <div class='line2'></div>
                 </div>
-            </div>  
-            <div class="section-paragraph-2" data-0="top:350; opacity: 1" data-390="top:490px; opacity: 0">
-                <h2 id="intro-title-2">nkj</h2>
-                <p id="intro-content-2">
-                Last year I learned a lot about myself. <br>
-                I travelled to 20+ countries. <br>
-                I tried design and management. <br>
-                I definitely prefer design.<br>
-                I'm seeking for the ways, but first, get lost with me.</p>
+                <nav class='contact-list menu menu--adsila'>
+                    <a class="menu__item" href="#">
+                        <span class="menu__item-name" id="linkedin" href="http://www.linkedin.com/in/nicolekjiang" target="_blank"><h2>Linkedin</h2></span>
+                        <span class="menu__item-label"><p>Work experience</p></span>
+                    </a>
+                    <a class="menu__item" href="#">
+                        <span class="menu__item-name" id="dribbble"><h2>Dribbble</h2></span>
+                        <span class="menu__item-label"><p>Design work</p></span>
+                    </a>
+                    <a class="menu__item" href="#">
+                        <span class="menu__item-name" id="email"><h2>Email</h2></span>
+                        <span class="menu__item-label"><p>Say hi, grab coffee, get in touch</p></span>
+                    </a>
+                </nav>
             </div>
-            <div class="clearfix"></div>
-            <ul class="section-contact" id="intro-contact">
-                <li><a href="http://www.dribbble.com/nicolekjiang" target="_blank"><img src="img/dribbble.svg"></a></li>
-                <li><a href="http://www.github.com/nicolekjiang" target="_blank"><img src="img/github.svg"></a></li>
-                <li><a href="http://www.instagram.com/nicolekjiang" target="_blank"><img src="img/insta.svg"></a></li>
-                <li><a href="http://www.twitter.com/nicolekjiang" target="_blank"><img src="img/twitter.svg"></a></li>
-                <li><a href="http://www.linkedin.com/in/nicolekjiang" target="_blank"><img src="img/linkedin.svg"></a></li>
-            </ul>
-            <div class="clearfix"></div>
         </div>
-      </section>
 
-      <section id="section-project-0" data-68="margin-top:0;" data-640="margin-top:100px;">
-        <div class="width-wrapper">
-            <div class="project-background" data-900="opacity:1;" data-1060="opacity: 0">
-                <img src="img/2.png" id="project-bg">
-                <h3>Projects</h3>
-            </div>      
-            <div class="project-title" data-290="margin-top:-250px;" data-1100="margin-top: -500px;">
-                <h2>Projects</h2>  
-                <div id="title-box"></div>
-            </div>  
-            <p class="title-description">
-                CHECK OUT SOME OF MY RECENT  DESIGN WORK. <br>
-                LISTED BELOW -
-            </p>
-        </div>
-      </section>
 
-      <!-- Reservoir -->
-      <section id="section-project-1" class="section-project" data-650="margin-top:380px;" data-1100="margin-top:310px;"  data-1550="opacity:1" data-1750="opacity:0">
-        <div class="width-wrapper">
-            <div class="project-background" data-780="margin-top:15px;" data-1100="margin-top:-15px;" data-1500="margin-top:-15px;"></div>
-            <h2 class="project-number" data-600="opacity:0.2;margin-top:-380px" data-950="opacity:1;margin-top:-135px;">01</h2>
-            <div class="project-img">
-                <img src="img/3.jpg" class="project-img-3"data-800="margin-top:-170px; opacity: 0.05" data-950="margin-top:-110px;opacity: 1">
-                <img src="img/4.png" class="project-img-4" data-840="margin-top:300px; opacity: 0.1" data-1030="margin-top:180px;opacity: 1">
-                <img src="img/5.jpg" class="project-img-5" data-820="margin-left:267px; opacity: 0.1" data-990="margin-left:217px; opacity: 0.5">
-            </div>
-            <div class="section-paragraph-1">
-                <div class="project-title">Project</div>
-                <div class="project-title-name">Reservoir</div>
-                <div class="project-divider"></div>
-                <div class="project-content">Visualizing Agricultural Water Irration.<br>
-                    <br>
-                    <a href="https://dribbble.com/nicolekjiang/tags/visualization" target="_blank" class="a-tags">Data Visualization</a>
-                    <a href="https://dribbble.com/nicolekjiang/tags/dashboard" target="_blank" class="a-tags">Dashboard Design</a> 
-                    <a href="https://dribbble.com/nicolekjiang/tags/location" target="_blank" class="a-tags">Location System</a>
-                </div>
-            </div>
-            <a href="https://dribbble.com/nicolekjiang/projects/343605-Project-Reservoir" target="_blank"><div class="project-cta" data-920="margin-top:320px; opacity:0.1" data-1070="margin-top:280px; opacity:1"></div></a>
-            <div class="project-date">January 2016</div>
-            <div class="project-extension"></div>
-        </div>
-        <div class="clearfix"></div>
-      </section>
 
-     <!-- Mithril -->
-      <section id="section-project-2" class="section-project" data-2580="opacity:1;" data-2840="opacity:0">
-        <div class="width-wrapper">
-            <div class="project-background"></div>
-            <h2 class="project-number" data-1340="opacity:0.1;margin-top:-420px" data-1900="opacity:1;margin-top:-220px;">02</h2>
-            <div class="project-img"> 
-                <img src="img/6.jpg" class="project-img-6" data-1530="opacity:0.2;" data-2080="opacity:1">
-                <img src="img/7.png" class="project-img-7" data-1530="opacity:0.1;margin-top:-270px" data-2080="opacity:0.6;margin-top:-150px;">
-                <img src="img/8.png" class="project-img-8" data-1940="opacity:0.0" data-2150="opacity:0.07">
-            </div>
-            <div class="section-paragraph-1" data-1890="opacity:0;" data-2120="opacity:1;">
-                <div class="project-title">Project</div>
-                <div class="project-title-name">Mithril</div>
-                <div class="project-divider"></div>
-                <div class="project-content">Discovering rogue trader.<br>
-                Dashboard that helps pinpoint cases of trader oversights.<br>
-                <br>
-                <a href="https://dribbble.com/nicolekjiang/tags/dashboard" target="_blank" class="a-tags">Dashboard design</a> 
-                <a href="https://dribbble.com/nicolekjiang/tags/architecture" target="_blank" class="a-tags">Info architecture</a>
-            </div>
-            <a href="https://dribbble.com/shots/1971409-Alert-management-tile-view" target="_blank"><div class="project-cta" data-2000="opacity:0.1;" data-2190="opacity:1;"></div></a>
-            <div class="project-date">April 2015</div>
-            <div class="project-extension"></div>
-        </div>
-        <div class="clearfix"></div>
-      </section>
 
-      <!-- Moneyhack -->
-      <section id="section-project-3" class="section-project" data-3800="opacity:1;" data-4100="opacity:0">
-        <div class="width-wrapper">
-            <div class="project-background"></div>
-            <h2 class="project-number" data-3130="opacity:0.1;" data-3280="opacity:1;">03</h2>
-            <div class="project-img">
-                <img src="img/9.png" class="project-img-9">
-                <img src="img/10.png" class="project-img-10" data-2830="opacity:0;margin-right:-80px" data-3280="opacity:1;margin-right:0px;">
-                <img src="img/11.jpg" class="project-img-11" data-2690="opacity:0.1;margin-top:-280px" data-3090="opacity:0.5;margin-top:-140px;">
-            </div>
-            <div class="section-paragraph-1" data-3100="opacity:0.1;padding-top:300px" data-3200="opacity:1;padding-top:225px;">
-                <div class="project-title">Project</div>
-                <div class="project-title-name">MoneyHack</div>
-                <div class="project-divider"></div>
-                <div class="project-content">NFC-based easy payment system<br>
-                Designed, prototyped, released in 12 hours</div>
-                <br>
-                <a href="https://dribbble.com/nicolekjiang/tags/mobile" target="_blank" class="a-tags">Mobile design</a> 
-                <a href="https://dribbble.com/nicolekjiang/tags/payment" target="_blank" class="a-tags">Payment system</a>
-                <a href="https://dribbble.com/nicolekjiang/tags/hackathon" target="_blank" class="a-tags">Hackathon</a>
-            </div>
-            <a href="https://dribbble.com/shots/2318553-Home-page-for-personal-finance" target="_blank"><div class="project-cta" data-2900="opacity:0.1;" data-3100="opacity:1;"></div></a>
-            <div class="project-date">October 2015</div>
-            <div class="project-extension"></div>
-        </div>
-        <div class="clearfix"></div>
-      </section>
+        <script src="js/imagesloaded.pkgd.min.js"></script>
 
-      <footer>
-        <div id="footer-width-wrapper" data-3880="opacity:0" data-4010="opacity:1">
-              <div class="footer-divider"></div>
-              <h2>Thanks for visiting.</h2>
-              <p class="extra-margin-10">If you enjoyed my work or just want to say hi, don’t be shy. </p>
-              <ul class="section-contact extra-margin-70" id="footer-contact">
-                <li><a href="http://www.dribbble.com/nicolekjiang" target="_blank"><img src="img/dribbble.svg"></a></li>
-                <li><a href="http://www.github.com/nicolekjiang" target="_blank"><img src="img/github.svg"></a></li>
-                <li><a href="http://www.instagram.com/nicolekjiang" target="_blank"><img src="img/insta.svg"></a></li>
-                <li><a href="http://www.twitter.com/nicolekjiang" target="_blank"><img src="img/twitter.svg"></a></li>
-                <li><a href="http://www.linkedin.com/in/nicolekjiang" target="_blank"><img src="img/linkedin.svg"></a></li>
-            </ul>
-            <p>This site is inspired by some pretty badass stuff: </p>
-            <ul class="extra-margin-15"> 
-                <li><a href="https://dribbble.com/STUDIOJQ" target="_blank">Studio JQ</a></li>
-                <li><a href="https://dribbble.com/letsgorally" target="_blank">Ben Cline</a></li>
-                <li><a href="https://dribbble.com/AmberAsay" target="_blank">Amber Asay</a></li>
-                <li><a href="http://www.market-me.fr/barni-startup/" target="_blank">Barni Startup</a></li>
+        <script type="text/javascript" src="js/jquery.min.js"></script>        
+
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+
+
+    </body>
+            <script type="text/javascript">
+                $(document).ready(function(){
+                    var scene = document.getElementById('scene');
+                    var parallaxInstance = new Parallax(scene,{
             
-                <li><a href="https://yearinmusic.spotify.com/" target="_blank">Spotify Design</a></li>
-                <li><a href="http://beta.rallyinteractive.com/" target="_blank">Rally Interactive</a></li>
-                <li><a href="http://www.radiohead.com/" target="_blank">Radiohead</a></li>
-                <li><a href="https://open.spotify.com/user/spotify/playlist/0nM0EbLU4gnLpzbBwvtkyi" target="_blank">All Funked Up</a></li>
-            </ul>
-            <p id="footer-note">©2016 Nicole Jiang. All Rights Reserved.</p>
-        </div>  
-      </footer>
-      <!-- Javascript time -->
-      <script type="text/javascript" src="js/skrollr.min.js"></script>
-        <script type="text/javascript">
-            var speed = 1000;
-            $(document).ready(function(){
-                var c = detectmob();
-                var w = $(document).width();
-                if (c==false && w>800){
-                  var width = 110;
-                  var count = 0;
-                  function widthF() {
-                    count += 1;
-                    width -= 1.5 - count/200;
-                    widthSize = width + '%';
-                    $('#white-bg-slide').css('width',widthSize);
-                    if (width > 35) {
-                      window.requestAnimationFrame(widthF);
-                    }
-                  }
-                  window.requestAnimationFrame(widthF);
-
-                  setTimeout(
-                    function() 
-                    {$('#intro-title-1').fadeTo(1500,1);
-                  }, 700);
-                  setTimeout(
-                    function() 
-                    {$('#intro-bg').animate({
-                        opacity:1,
-                        //'margin-top': "-60px"
-                      }, {
-                        duration: 2500
-                      });
-                    }, 600);
-                  setTimeout(
-                    function() 
-                    {
-                      $('#solid-bg').fadeTo(speed,1);
-                      $('body #section-intro h3').fadeTo(speed,1);
-                      $('#intro-content-2').fadeTo(speed,1);
-                      $('#project-bg').fadeTo(speed,1);
-
-                      $('#intro-content-1').animate({
-                        opacity:1,
-                        'margin-top': "-60px"
-                      }, {
-                        duration: 800
-                      });
-
-                      $('#intro-title-2').animate({
-                        opacity:1,
-                        'margin-top': "10px"
-                      }, {
-                        duration: 800
-                      });
-                      
-                      $('#intro-contact').animate({
-                        opacity:1,
-                        'margin-top': "-10px"
-                      }, {
-                        duration: 800
-                      });
-                    }, 2000);
-
-                    //THANKS @Prinzhorn ! Skrollr is pretty BADASS
-                    var s = skrollr.init({
-                        forceHeight: false
+                        pointerEvents: true
                     });
 
-                    //dim images
-                    var excludeList = [5, 7, 8, 10, 11];
-                    // $('img').hover(function(){
-                    //     console.log('hovered');
-                    //     var str = $(this).attr('class');
-                    //     str = str.replace('project-img-', '');
-                    //     str = str.replace('skrollable-after', '');
-                    //     str = str.replace('skrollable-between', '');
-                    //     str = str.replace('skrollable', '');
-                    //     m = excludeList.indexOf(parseInt(str));
-                    //     if ( m < 0){
+                     //window.location = "http://www.linkedin.com/in/nicolekjiang";
+                     $('#linkedin').on('click', function(){
+                          window.open('http://www.linkedin.com/in/nicolekjiang','_blank');
+                     })
+                      $('#dribbble').on('click', function(){
+                          window.open('http://www.dribbble.com/nicolekjiang','_blank');
+                     })
+                       $('#email').on('click', function(){
+                          window.open('mailto:hi@nicolejiang.com','_blank');
+                     })
 
-                    //         var l = $(this).parent().find('img').not(this).not($('.project-img-8')); 
-                    //         l.fadeTo('fast',0.25);
-                    //     }
-                    // }, function(){
-                    //     var l = $(this).parent().find('img').not(this).not($('.project-img-8'));
-                    //     l.fadeTo('medium',1);
-                    // });
+                       $('#mixpanel').on('click', function(){
+                          window.open('http://mixpanel.com','_blank');
+                     })
+                });
+               
 
-                }else{
-                  $('body').removeClass('test');
-                };
+            </script>
 
-            });
-            //source: http://detectmobilebrowsers.com/
-            function detectmob() { 
-                 if( navigator.userAgent.match(/Android/i)
-                 || navigator.userAgent.match(/webOS/i)
-                 || navigator.userAgent.match(/iPhone/i)
-                 || navigator.userAgent.match(/iPad/i)
-                 || navigator.userAgent.match(/iPod/i)
-                 || navigator.userAgent.match(/BlackBerry/i)
-                 || navigator.userAgent.match(/Windows Phone/i)
-                 ){
-                return true;
-              }
-             else {
-                return false;
-              }
-            }
-        </script>
-  </body>
-</html>
+
+  </html>

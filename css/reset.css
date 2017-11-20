@@ -1,21 +1,21 @@
 ::selection {
-  background: #5f68f3;
+  background: #5F68F3;
   color: #ffffff;
 }
 ::-moz-selection {
-  background: #5f68f3;
+  background: #5F68F3;
   color: #ffffff;
 }
 ::-o-selection {
-  background: #5f68f3;
+  background: #5F68F3;
   color: #ffffff;
 }
 ::-ms-selection {
-  background: #5f68f3;
+  background: #5F68F3;
   color: #ffffff;
 }
 ::-webkit-selection {
-  background: #5f68f3;
+  background: #5F68F3;
   color: #ffffff;
 }
 ol,
@@ -108,9 +108,6 @@ input {
   margin: 0;
   padding: 0;
   border: 0;
-  font-family: 'Lato', sans-serif;
-  font-size: 11px;
-  font: inherit;
   vertical-align: baseline;
   text-decoration: none;
   outline: none;
@@ -142,3 +139,4 @@ input[type='text'],
 textarea {
   cursor: text;
 }
+/*# sourceMappingURL=reset.css.map */
